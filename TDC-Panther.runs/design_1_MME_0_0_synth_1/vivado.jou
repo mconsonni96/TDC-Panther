@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Nov  8 14:20:20 2021
-# Process ID: 77104
+# Start of session at: Wed Nov 10 14:38:29 2021
+# Process ID: 12980
 # Current directory: /home/mconsonni/Desktop/Tesi/Projects/TDC-Panther/TDC-Panther.runs/design_1_MME_0_0_synth_1
 # Command line: vivado -log design_1_MME_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_MME_0_0.tcl
 # Log file: /home/mconsonni/Desktop/Tesi/Projects/TDC-Panther/TDC-Panther.runs/design_1_MME_0_0_synth_1/design_1_MME_0_0.vds

@@ -1,159 +1,159 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.509504",
-   "Default View_TopLeft":"2783,779",
+   "Default View_ScaleFactor":"0.546075",
+   "Default View_TopLeft":"4107,963",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
-preplace port USB_UART -pg 1 -lvl 10 -x 10140 -y 840 -defaultsOSRD
+preplace port USB_UART -pg 1 -lvl 10 -x 12920 -y 840 -defaultsOSRD
 preplace port ch_sync_diff -pg 1 -lvl 0 -x 0 -y 960 -defaultsOSRD
 preplace port left_ch1_diff -pg 1 -lvl 0 -x 0 -y 980 -defaultsOSRD
 preplace port left_ch2_diff -pg 1 -lvl 0 -x 0 -y 1000 -defaultsOSRD
-preplace port sys_diff_clock -pg 1 -lvl 0 -x 0 -y 840 -defaultsOSRD
+preplace port sys_diff_clock -pg 1 -lvl 0 -x 0 -y 860 -defaultsOSRD
 preplace port tdc_diff_clock -pg 1 -lvl 0 -x 0 -y 1020 -defaultsOSRD
-preplace inst AXI4Stream_UART_0 -pg 1 -lvl 9 -x 9960 -y 830 -defaultsOSRD
-preplace inst BeltBus_TDCCounter_0 -pg 1 -lvl 6 -x 8730 -y 280 -defaultsOSRD
-preplace inst BeltBus_TDCHistogrammer_0 -pg 1 -lvl 6 -x 8730 -y 530 -defaultsOSRD
-preplace inst BeltBus_TDCHistogrammer_1 -pg 1 -lvl 6 -x 8730 -y 830 -defaultsOSRD
-preplace inst BeltBus_TTM_0 -pg 1 -lvl 7 -x 9120 -y 790 -defaultsOSRD
-preplace inst MME_0 -pg 1 -lvl 8 -x 9540 -y 810 -defaultsOSRD
-preplace inst Master -pg 1 -lvl 4 -x 1340 -y 720 -defaultsOSRD
-preplace inst TDC_Calib -pg 1 -lvl 4 -x 1340 -y 1024 -defaultsOSRD
-preplace inst axi_interconnect_0 -pg 1 -lvl 3 -x 840 -y 310 -defaultsOSRD
-preplace inst axis_broadcaster_0 -pg 1 -lvl 5 -x 8331 -y 740 -defaultsOSRD
-preplace inst axis_broadcaster_1 -pg 1 -lvl 5 -x 8331 -y 1090 -defaultsOSRD
-preplace inst axis_interconnect_0 -pg 1 -lvl 7 -x 9120 -y 430 -defaultsOSRD
-preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 140 -y 840 -defaultsOSRD
-preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 460 -y 740 -defaultsOSRD
-preplace inst xadc_wiz_0 -pg 1 -lvl 4 -x 1340 -y 500 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 8 -x 9540 -y 1050 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 1 -x 140 -y 720 -defaultsOSRD
-preplace inst TDC_Calib|AXI4Stream_MuxDebugg_0 -pg 1 -lvl 5 -x 5370 -y 1044 -defaultsOSRD
-preplace inst TDC_Calib|AXI4_TDC_Wrapper_0 -pg 1 -lvl 6 -x 5830 -y 1104 -defaultsOSRD
-preplace inst TDC_Calib|TDC -pg 1 -lvl 4 -x 2350 -y 1046 -defaultsOSRD
-preplace inst TDC_Calib|clk_wiz_1 -pg 1 -lvl 3 -x 1870 -y 1104 -defaultsOSRD
-preplace inst TDC_Calib|util_ds_buf_0 -pg 1 -lvl 1 -x 1360 -y 1114 -defaultsOSRD
-preplace inst TDC_Calib|util_ds_buf_1 -pg 1 -lvl 2 -x 1630 -y 1114 -defaultsOSRD
-preplace inst TDC_Calib|TDC|Ch1 -pg 1 -lvl 4 -x 3750 -y 1156 -defaultsOSRD
-preplace inst TDC_Calib|TDC|Ch2 -pg 1 -lvl 5 -x 4320 -y 1418 -defaultsOSRD
-preplace inst TDC_Calib|TDC|CoarseTreeDistributor_0 -pg 1 -lvl 2 -x 2590 -y 1096 -defaultsOSRD
-preplace inst TDC_Calib|TDC|StartStopGenerator_0 -pg 1 -lvl 2 -x 2590 -y 1256 -defaultsOSRD
-preplace inst TDC_Calib|TDC|Sync -pg 1 -lvl 3 -x 3180 -y 1096 -defaultsOSRD
-preplace inst TDC_Calib|TDC|util_vector_logic_0 -pg 1 -lvl 6 -x 4744 -y 1446 -defaultsOSRD
-preplace inst TDC_Calib|TDC|util_vector_logic_1 -pg 1 -lvl 5 -x 4320 -y 1176 -defaultsOSRD
-preplace inst TDC_Calib|TDC|xlconcat_0 -pg 1 -lvl 6 -x 4744 -y 1616 -defaultsOSRD
-preplace inst TDC_Calib|TDC|xlconstant_0 -pg 1 -lvl 1 -x 2320 -y 1086 -defaultsOSRD
-preplace inst TDC_Calib|TDC|xlslice_0 -pg 1 -lvl 2 -x 2590 -y 1366 -defaultsOSRD
-preplace inst TDC_Calib|TDC|xlslice_1 -pg 1 -lvl 3 -x 3180 -y 1412 -defaultsOSRD
-preplace inst TDC_Calib|TDC|xlslice_2 -pg 1 -lvl 4 -x 3750 -y 1532 -defaultsOSRD
-preplace inst TDC_Calib|TDC|xlslice_3 -pg 1 -lvl 2 -x 2590 -y 1466 -defaultsOSRD
-preplace inst TDC_Calib|TDC|xlslice_4 -pg 1 -lvl 3 -x 3180 -y 1306 -defaultsOSRD
-preplace inst TDC_Calib|TDC|xlslice_5 -pg 1 -lvl 4 -x 3750 -y 1426 -defaultsOSRD
-preplace netloc clk_wiz_0_clk_out1 1 1 8 260 630 660 660 1040 630 6280 630 8570 670 8920 180 9290 930 9750
-preplace netloc clk_wiz_0_clk_out2 1 1 8 270J 640 NJ 640 NJ 640 NJ 640 8530J 680 NJ 680 9300J 690 9770
-preplace netloc clk_wiz_0_locked 1 1 1 280 780n
-preplace netloc proc_sys_reset_0_interconnect_aresetn 1 2 6 650 650 1010 160 NJ 160 NJ 160 8930 170 9320J
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 7 670 964 1030 790 6290 620 8520 170 8880 900 9300 940 9770
-preplace netloc proc_sys_reset_0_peripheral_reset 1 2 2 660 954 1000J
-preplace netloc xlconstant_0_dout 1 8 1 9760J 810n
-preplace netloc xlconstant_1_dout 1 1 1 N 720
-preplace netloc AXI4Stream_UART_0_M00_AXIS_RX 1 7 3 9330 680 NJ 680 10120
-preplace netloc AXI4Stream_UART_0_UART 1 9 1 N 840
-preplace netloc BeltBus_TDCCounter_0_M00_AXIS_Push 1 6 1 8900 240n
-preplace netloc BeltBus_TDCHistogrammer_1_M00_AXIS 1 6 1 8940 280n
-preplace netloc BeltBus_TTM_0_M00_AXIS 1 7 1 9280 780n
-preplace netloc MME_0_M_AXIS 1 8 1 N 770
-preplace netloc MME_0_M_AXI_MM2S 1 2 7 680 620 990J 130 NJ 130 NJ 130 NJ 130 NJ 130 9760
-preplace netloc MME_0_M_AXI_S2MM 1 2 7 690 630 1000J 140 NJ 140 NJ 140 NJ 140 NJ 140 9750
-preplace netloc S01_AXIS_1 1 6 1 8910 260n
-preplace netloc S03_AXIS_1 1 4 3 6260J 150 NJ 150 8950
-preplace netloc TDC_Calib_M00_AXIS 1 4 1 6270 924n
-preplace netloc TDC_M00_BB 1 4 1 6300 720n
-preplace netloc axi_interconnect_0_M00_AXI 1 3 1 1050 230n
-preplace netloc axi_interconnect_0_M01_AXI 1 3 3 N 250 NJ 250 NJ
-preplace netloc axi_interconnect_0_M02_AXI 1 3 3 NJ 270 NJ 270 8510
-preplace netloc axi_interconnect_0_M03_AXI 1 3 3 1060 380 NJ 380 8540J
-preplace netloc axi_interconnect_0_M04_AXI 1 3 1 1020 310n
+preplace inst AXI4Stream_UART_0 -pg 1 -lvl 9 -x 12740 -y 830 -defaultsOSRD
+preplace inst BeltBus_TDCCounter_0 -pg 1 -lvl 6 -x 11520 -y 280 -defaultsOSRD
+preplace inst BeltBus_TDCHistogrammer_0 -pg 1 -lvl 6 -x 11520 -y 530 -defaultsOSRD
+preplace inst BeltBus_TDCHistogrammer_1 -pg 1 -lvl 6 -x 11520 -y 830 -defaultsOSRD
+preplace inst BeltBus_TTM_0 -pg 1 -lvl 7 -x 11900 -y 790 -defaultsOSRD
+preplace inst MME_0 -pg 1 -lvl 8 -x 12320 -y 810 -defaultsOSRD
+preplace inst Master -pg 1 -lvl 4 -x 1330 -y 720 -defaultsOSRD
+preplace inst TDC_Calib -pg 1 -lvl 4 -x 1330 -y 1024 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 3 -x 830 -y 310 -defaultsOSRD
+preplace inst axis_broadcaster_0 -pg 1 -lvl 5 -x 11121 -y 740 -defaultsOSRD
+preplace inst axis_broadcaster_1 -pg 1 -lvl 5 -x 11121 -y 1090 -defaultsOSRD
+preplace inst axis_interconnect_0 -pg 1 -lvl 7 -x 11900 -y 430 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 140 -y 860 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 460 -y 760 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 4 -x 1330 -y 500 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 8 -x 12320 -y 1050 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 1 -x 140 -y 740 -defaultsOSRD
+preplace inst TDC_Calib|AXI4Stream_MuxDebugg_0 -pg 1 -lvl 5 -x 5340 -y 1044 -defaultsOSRD
+preplace inst TDC_Calib|AXI4_TDC_Wrapper_0 -pg 1 -lvl 6 -x 5800 -y 1104 -defaultsOSRD
+preplace inst TDC_Calib|TDC -pg 1 -lvl 4 -x 2340 -y 1046 -defaultsOSRD
+preplace inst TDC_Calib|clk_wiz_1 -pg 1 -lvl 3 -x 1860 -y 1104 -defaultsOSRD
+preplace inst TDC_Calib|util_ds_buf_0 -pg 1 -lvl 1 -x 1350 -y 1104 -defaultsOSRD
+preplace inst TDC_Calib|util_ds_buf_1 -pg 1 -lvl 2 -x 1620 -y 1104 -defaultsOSRD
+preplace inst TDC_Calib|TDC|Ch1 -pg 1 -lvl 4 -x 3740 -y 1156 -defaultsOSRD
+preplace inst TDC_Calib|TDC|Ch2 -pg 1 -lvl 5 -x 4310 -y 1446 -defaultsOSRD
+preplace inst TDC_Calib|TDC|CoarseTreeDistributor_0 -pg 1 -lvl 2 -x 2580 -y 1096 -defaultsOSRD
+preplace inst TDC_Calib|TDC|StartStopGenerator_0 -pg 1 -lvl 2 -x 2580 -y 1256 -defaultsOSRD
+preplace inst TDC_Calib|TDC|Sync -pg 1 -lvl 3 -x 3150 -y 1096 -defaultsOSRD
+preplace inst TDC_Calib|TDC|util_vector_logic_0 -pg 1 -lvl 6 -x 4714 -y 1446 -defaultsOSRD
+preplace inst TDC_Calib|TDC|util_vector_logic_1 -pg 1 -lvl 5 -x 4310 -y 1236 -defaultsOSRD
+preplace inst TDC_Calib|TDC|xlconcat_0 -pg 1 -lvl 6 -x 4714 -y 1616 -defaultsOSRD
+preplace inst TDC_Calib|TDC|xlconstant_0 -pg 1 -lvl 1 -x 2310 -y 1086 -defaultsOSRD
+preplace inst TDC_Calib|TDC|xlslice_0 -pg 1 -lvl 2 -x 2580 -y 1366 -defaultsOSRD
+preplace inst TDC_Calib|TDC|xlslice_1 -pg 1 -lvl 3 -x 3150 -y 1412 -defaultsOSRD
+preplace inst TDC_Calib|TDC|xlslice_2 -pg 1 -lvl 4 -x 3740 -y 1532 -defaultsOSRD
+preplace inst TDC_Calib|TDC|xlslice_3 -pg 1 -lvl 2 -x 2580 -y 1466 -defaultsOSRD
+preplace inst TDC_Calib|TDC|xlslice_4 -pg 1 -lvl 3 -x 3150 -y 1306 -defaultsOSRD
+preplace inst TDC_Calib|TDC|xlslice_5 -pg 1 -lvl 4 -x 3740 -y 1426 -defaultsOSRD
+preplace netloc clk_wiz_0_clk_out1 1 1 8 270 660 650 660 1060 630 6240 630 11360 670 11710 180 12070 940 12550
+preplace netloc clk_wiz_0_clk_out2 1 1 8 260J 640 NJ 640 NJ 640 NJ 640 11320J 680 NJ 680 12080J 690 12560
+preplace netloc clk_wiz_0_locked 1 1 1 280 800n
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 2 6 640 650 1020 160 NJ 160 NJ 160 11720 170 12100J
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 7 660 740 1020 790 6250 620 11310 170 11670 900 12110 930 12560
+preplace netloc proc_sys_reset_0_peripheral_reset 1 2 2 680 964 990J
+preplace netloc xlconstant_0_dout 1 8 1 12540J 810n
+preplace netloc xlconstant_1_dout 1 1 1 N 740
+preplace netloc S01_AXIS_1 1 6 1 11700 260n
+preplace netloc MME_0_M_AXI_S2MM 1 2 7 680 630 990J 140 NJ 140 NJ 140 NJ 140 NJ 140 12530
+preplace netloc axis_broadcaster_1_M01_AXIS 1 5 1 11370 790n
+preplace netloc axis_broadcaster_1_M00_AXIS 1 5 1 11340 490n
+preplace netloc axis_broadcaster_0_M04_AXIS 1 5 2 11350 690 11680J
+preplace netloc axis_broadcaster_0_M02_AXIS 1 5 1 11290 740n
+preplace netloc axis_broadcaster_0_M01_AXIS 1 5 1 11300 470n
+preplace netloc axis_broadcaster_0_M00_AXIS 1 5 1 11290 230n
+preplace netloc axi_interconnect_0_M08_AXI 1 3 4 NJ 390 NJ 390 NJ 390 11690
 preplace netloc axi_interconnect_0_M07_AXI 1 3 1 1040 370n
-preplace netloc axi_interconnect_0_M08_AXI 1 3 4 NJ 390 NJ 390 NJ 390 8900
-preplace netloc axis_broadcaster_0_M00_AXIS 1 5 1 8500 230n
-preplace netloc axis_broadcaster_0_M01_AXIS 1 5 1 8510 470n
-preplace netloc axis_broadcaster_0_M02_AXIS 1 5 1 8500 740n
-preplace netloc axis_broadcaster_0_M04_AXIS 1 5 2 8560 690 8890J
-preplace netloc axis_broadcaster_1_M00_AXIS 1 5 1 8550 490n
-preplace netloc axis_broadcaster_1_M01_AXIS 1 5 1 8580 790n
-preplace netloc axis_interconnect_0_M00_AXIS 1 7 1 9310 430n
-preplace netloc ch_sync_diff_1 1 0 4 NJ 960 NJ 960 650J 974 NJ
-preplace netloc left_ch1_diff_1 1 0 4 NJ 980 NJ 980 640J 984 1020J
-preplace netloc left_ch2_diff_1 1 0 4 NJ 1000 NJ 1000 NJ 1000 1010J
-preplace netloc sys_diff_clock_1 1 0 1 NJ 840
-preplace netloc tdc_diff_clock_1 1 0 4 NJ 1020 NJ 1020 NJ 1020 990J
-preplace netloc TDC_Calib|AXI4_TDC_Wrapper_0_MUX_sel 1 4 3 5170 914 NJ 914 6060
-preplace netloc TDC_Calib|AXI4_TDC_Wrapper_0_TDC_DEBUG_PROP_WPORT 1 3 4 2030 2086 5150J 2466 NJ 2466 6060
-preplace netloc TDC_Calib|AXI4_TDC_Wrapper_0_TDC_PROP_WPORT 1 3 4 2010 2096 5100J 2476 NJ 2476 6080
-preplace netloc TDC_Calib|Net 1 0 6 NJ 1244 NJ 1244 NJ 1244 1980J 2046 5160 1164 5560J
-preplace netloc TDC_Calib|TDC_Res 1 4 3 5110 2076 NJ 2076 NJ
-preplace netloc TDC_Calib|TDC_dout 1 4 2 N 1616 5580J
-preplace netloc TDC_Calib|clk_wiz_0_clk_out1 1 0 6 NJ 1174 NJ 1174 NJ 1174 1990 2056 5150 1174 5550
-preplace netloc TDC_Calib|clk_wiz_1_clk_out1 1 3 1 2000 1094n
-preplace netloc TDC_Calib|proc_sys_reset_0_peripheral_aresetn 1 0 6 NJ 2456 NJ 2456 NJ 2456 1980J 2076 5090J 2066 5570
-preplace netloc TDC_Calib|reset_0_1 1 0 4 NJ 1264 NJ 1264 NJ 1264 1970
-preplace netloc TDC_Calib|util_ds_buf_0_IBUF_OUT 1 1 1 NJ 1114
-preplace netloc TDC_Calib|util_ds_buf_1_BUFG_O 1 2 1 NJ 1114
+preplace netloc axi_interconnect_0_M03_AXI 1 3 3 1060 380 NJ 380 11330J
+preplace netloc axi_interconnect_0_M02_AXI 1 3 3 NJ 270 NJ 270 11300
+preplace netloc axi_interconnect_0_M01_AXI 1 3 3 N 250 NJ 250 NJ
+preplace netloc axi_interconnect_0_M00_AXI 1 3 1 1050 230n
+preplace netloc TDC_M00_BB 1 4 1 6260 720n
+preplace netloc TDC_Calib_M00_AXIS 1 4 1 6230 934n
+preplace netloc S03_AXIS_1 1 4 3 6220J 150 NJ 150 11740
+preplace netloc MME_0_M_AXI_MM2S 1 2 7 670 620 980J 130 NJ 130 NJ 130 NJ 130 NJ 130 12540
+preplace netloc MME_0_M_AXIS 1 8 1 N 770
+preplace netloc BeltBus_TTM_0_M00_AXIS 1 7 1 12060 780n
+preplace netloc BeltBus_TDCHistogrammer_1_M00_AXIS 1 6 1 11730 280n
+preplace netloc BeltBus_TDCCounter_0_M00_AXIS_Push 1 6 1 11690 240n
+preplace netloc AXI4Stream_UART_0_UART 1 9 1 N 840
+preplace netloc AXI4Stream_UART_0_M00_AXIS_RX 1 7 3 12110 680 NJ 680 12900
+preplace netloc axi_interconnect_0_M04_AXI 1 3 1 1030 310n
+preplace netloc axis_interconnect_0_M00_AXIS 1 7 1 12090 430n
+preplace netloc ch_sync_diff_1 1 0 4 NJ 960 NJ 960 660J 974 NJ
+preplace netloc left_ch1_diff_1 1 0 4 NJ 980 NJ 980 640J 984 1010J
+preplace netloc left_ch2_diff_1 1 0 4 NJ 1000 NJ 1000 NJ 1000 1000J
+preplace netloc sys_diff_clock_1 1 0 1 NJ 860
+preplace netloc tdc_diff_clock_1 1 0 4 NJ 1020 NJ 1020 NJ 1020 980J
+preplace netloc TDC_Calib|AXI4_TDC_Wrapper_0_MUX_sel 1 4 3 5120 924 NJ 924 6030
+preplace netloc TDC_Calib|AXI4_TDC_Wrapper_0_TDC_DEBUG_PROP_WPORT 1 3 4 2030 1946 5060J 2066 NJ 2066 6030
+preplace netloc TDC_Calib|AXI4_TDC_Wrapper_0_TDC_PROP_WPORT 1 3 4 2020 1956 5050J 2076 NJ 2076 6040
+preplace netloc TDC_Calib|Net 1 0 6 NJ 1244 NJ 1244 NJ 1244 1960J 1916 5110 1164 5540J
+preplace netloc TDC_Calib|TDC_Res 1 4 3 5090 2056 5570J 1304 NJ
+preplace netloc TDC_Calib|TDC_dout 1 4 2 5080 2036 5560J
+preplace netloc TDC_Calib|clk_wiz_0_clk_out1 1 0 6 NJ 1174 NJ 1174 NJ 1174 1970 1926 5100 1174 5530
+preplace netloc TDC_Calib|clk_wiz_1_clk_out1 1 3 1 1990 1094n
+preplace netloc TDC_Calib|proc_sys_reset_0_peripheral_aresetn 1 0 6 NJ 2456 NJ 2456 NJ 2456 2000J 2336 5120J 2046 5550
+preplace netloc TDC_Calib|reset_0_1 1 0 4 NJ 1264 NJ 1264 NJ 1264 1980
+preplace netloc TDC_Calib|util_ds_buf_0_IBUF_OUT 1 1 1 NJ 1104
+preplace netloc TDC_Calib|util_ds_buf_1_BUFG_O 1 2 1 NJ 1104
 preplace netloc TDC_Calib|AXI4Stream_MuxDebugg_0_M00_AXIS_CT 1 5 1 N 1044
-preplace netloc TDC_Calib|AXI4_TDC_Wrapper_0_M00_AXIS_Autopush 1 6 1 6080 944n
+preplace netloc TDC_Calib|AXI4_TDC_Wrapper_0_M00_AXIS_Autopush 1 6 1 6040 964n
 preplace netloc TDC_Calib|Conn1 1 0 4 NJ 974 NJ 974 NJ 974 2030
 preplace netloc TDC_Calib|Conn2 1 0 4 NJ 994 NJ 994 NJ 994 2020
-preplace netloc TDC_Calib|Conn3 1 4 3 5100 924 NJ 924 NJ
-preplace netloc TDC_Calib|Conn4 1 0 4 NJ 1014 NJ 1014 NJ 1014 2010
-preplace netloc TDC_Calib|S00_AXI_1 1 0 6 1230J 916 NJ 916 NJ 916 NJ 916 5090J 1154 5540
-preplace netloc TDC_Calib|TDC_M00_BB 1 4 3 5110 934 NJ 934 6070J
-preplace netloc TDC_Calib|TDC_M01_AXIS_DebugCT 1 4 1 5120 1014n
-preplace netloc TDC_Calib|TDC_M01_AXIS_DebugCT1 1 4 1 5140 1034n
-preplace netloc TDC_Calib|TDC_M01_AXIS_DebugCT2 1 4 1 5130 994n
-preplace netloc TDC_Calib|tdc_diff_clock_1 1 0 1 NJ 1114
-preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_TDC_0_Calibrated 1 3 2 3380 1286 3970J
-preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_TDC_1_Calibrated 1 4 1 3960 1166n
-preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_TDC_2_Calibrated 1 5 1 4520 1428n
-preplace netloc TDC_Calib|TDC|CoarseTreeDistributor_0_CoarseCounter_CTD_0 1 2 1 2750 1056n
-preplace netloc TDC_Calib|TDC|CoarseTreeDistributor_0_CoarseCounter_CTD_1 1 2 2 2770 1472 3410J
-preplace netloc TDC_Calib|TDC|CoarseTreeDistributor_0_CoarseCounter_CTD_2 1 2 3 2790 1246 3370J 1998 3990J
-preplace netloc TDC_Calib|TDC|Din_1_1 1 0 4 NJ 1748 2430 1748 2840 1482 3470J
-preplace netloc TDC_Calib|TDC|Net 1 0 4 NJ 1728 2420 1728 2850 1492 3420J
-preplace netloc TDC_Calib|TDC|StartStopGenerator_0_StartOut 1 2 1 2740 1036n
-preplace netloc TDC_Calib|TDC|StartStopGenerator_0_StopOut 1 2 3 2740J 1502 3460 1602 3960J
-preplace netloc TDC_Calib|TDC|Sync_read_reg1 1 3 3 3390 2008 4010J 1596 NJ
-preplace netloc TDC_Calib|TDC|TDCChannelSlice_1_read_reg 1 4 2 3950 1268 4530J
-preplace netloc TDC_Calib|TDC|TDCChannelSlice_2_read_reg 1 5 1 4510 1448n
-preplace netloc TDC_Calib|TDC|clk_BB_1 1 0 5 2230J 1688 2410 1688 2760 1512 3440 1366 3950J
-preplace netloc TDC_Calib|TDC|clk_TDC_1 1 0 5 2240J 1698 2400 1698 2780 1522 3480 1592 3970J
-preplace netloc TDC_Calib|TDC|reset_0_1 1 0 3 NJ 1808 NJ 1808 2810
-preplace netloc TDC_Calib|TDC|reset_TDC_1 1 1 4 2430 1186 2830 1532 3400 1612 4000J
+preplace netloc TDC_Calib|Conn3 1 4 3 5050 934 NJ 934 NJ
+preplace netloc TDC_Calib|Conn4 1 0 4 NJ 1014 NJ 1014 NJ 1014 2000
+preplace netloc TDC_Calib|S00_AXI_1 1 0 6 NJ 954 NJ 954 NJ 954 2010J 1906 5070J 2026 5520
+preplace netloc TDC_Calib|TDC_M00_BB 1 4 3 5120 1154 5510J 984 NJ
+preplace netloc TDC_Calib|TDC_M01_AXIS_DebugCT 1 4 1 5060 1014n
+preplace netloc TDC_Calib|TDC_M01_AXIS_DebugCT1 1 4 1 5090 1034n
+preplace netloc TDC_Calib|TDC_M01_AXIS_DebugCT2 1 4 1 5070 994n
+preplace netloc TDC_Calib|tdc_diff_clock_1 1 0 1 NJ 1104
+preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_TDC_0_Calibrated 1 3 2 3370 1016 3990J
+preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_TDC_1_Calibrated 1 4 1 3930 1166n
+preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_TDC_2_Calibrated 1 5 1 N 1456
+preplace netloc TDC_Calib|TDC|CoarseTreeDistributor_0_CoarseCounter_CTD_0 1 2 1 2790 1056n
+preplace netloc TDC_Calib|TDC|CoarseTreeDistributor_0_CoarseCounter_CTD_1 1 2 2 2810 1226 3370J
+preplace netloc TDC_Calib|TDC|CoarseTreeDistributor_0_CoarseCounter_CTD_2 1 2 3 2730 1868 NJ 1868 3990J
+preplace netloc TDC_Calib|TDC|Din_1_1 1 0 4 2230J 1698 2430 1186 2760 1472 3430J
+preplace netloc TDC_Calib|TDC|Net 1 0 4 2190J 1688 2410 1016 2770 1532 NJ
+preplace netloc TDC_Calib|TDC|StartStopGenerator_0_StartOut 1 2 1 2780 1036n
+preplace netloc TDC_Calib|TDC|StartStopGenerator_0_StopOut 1 2 3 2750J 1482 3380 1366 3930J
+preplace netloc TDC_Calib|TDC|Sync_read_reg1 1 3 3 3360 996 NJ 996 4540J
+preplace netloc TDC_Calib|TDC|TDCChannelSlice_1_read_reg 1 4 2 3940 1166 4510J
+preplace netloc TDC_Calib|TDC|TDCChannelSlice_2_read_reg 1 5 1 4500 1476n
+preplace netloc TDC_Calib|TDC|clk_BB_1 1 0 5 2220J 1678 2390 976 2800 1492 3400 1356 3940J
+preplace netloc TDC_Calib|TDC|clk_TDC_1 1 0 5 2210J 1668 2400 1176 2850 1236 3410 1346 3950J
+preplace netloc TDC_Calib|TDC|reset_0_1 1 0 3 2200J 966 NJ 966 2840
+preplace netloc TDC_Calib|TDC|reset_TDC_1 1 1 4 2420 1006 2820 1246 3430 1336 3960J
 preplace netloc TDC_Calib|TDC|util_vector_logic_0_Res 1 6 1 N 1446
-preplace netloc TDC_Calib|TDC|util_vector_logic_1_Res 1 5 1 4550 1176n
+preplace netloc TDC_Calib|TDC|util_vector_logic_1_Res 1 5 1 4530 1236n
 preplace netloc TDC_Calib|TDC|xlconcat_0_dout 1 6 1 N 1616
-preplace netloc TDC_Calib|TDC|xlslice_0_Dout 1 2 1 2800J 1176n
-preplace netloc TDC_Calib|TDC|xlslice_1_Dout 1 3 1 3450J 1236n
-preplace netloc TDC_Calib|TDC|xlslice_2_Dout 1 4 1 3980J 1498n
-preplace netloc TDC_Calib|TDC|xlslice_3_Dout 1 2 1 2750J 1156n
-preplace netloc TDC_Calib|TDC|xlslice_4_Dout 1 3 1 3430J 1216n
-preplace netloc TDC_Calib|TDC|xlslice_5_Dout 1 4 1 3940J 1426n
+preplace netloc TDC_Calib|TDC|xlslice_0_Dout 1 2 1 2860J 1176n
+preplace netloc TDC_Calib|TDC|xlslice_1_Dout 1 3 1 3420J 1236n
+preplace netloc TDC_Calib|TDC|xlslice_2_Dout 1 4 1 3980J 1526n
+preplace netloc TDC_Calib|TDC|xlslice_3_Dout 1 2 1 2740J 1156n
+preplace netloc TDC_Calib|TDC|xlslice_4_Dout 1 3 1 3390J 1216n
+preplace netloc TDC_Calib|TDC|xlslice_5_Dout 1 4 1 3930J 1426n
 preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_0_M00_BB 1 3 1 N 1076
-preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_0_M01_AXIS_DebugCT 1 3 4 3470 1296 3990J 1278 NJ 1278 4900J
-preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_1_M00_BB 1 4 1 4000 1126n
-preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_1_M01_AXIS_DebugCT 1 4 3 3950 1106 NJ 1106 NJ
-preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_2_M00_BB 1 5 2 4520 1086 NJ
-preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_2_M01_AXIS_DebugCT 1 5 2 4540 1288 4910J
-preplace netloc TDC_Calib|TDC|Conn1 1 0 3 NJ 986 NJ 986 2740
-preplace netloc TDC_Calib|TDC|Conn4 1 3 4 3470 1016 NJ 1016 NJ 1016 4900J
-preplace netloc TDC_Calib|TDC|Conn5 1 0 4 2230J 958 NJ 958 2740J 956 3480
-preplace netloc TDC_Calib|TDC|Conn6 1 0 5 NJ 1708 NJ 1708 2820J 1236 3420J 1356 3990
-levelinfo -pg 1 0 140 460 840 1340 8331 8730 9120 9540 9960 10140
-levelinfo -hier TDC_Calib * 1360 1630 1870 2350 5370 5830 *
-levelinfo -hier TDC_Calib|TDC * 2320 2590 3180 3750 4320 4744 *
-pagesize -pg 1 -db -bbox -sgen -150 0 10270 3260
-pagesize -hier TDC_Calib -db -bbox -sgen 1200 904 6110 2494
-pagesize -hier TDC_Calib|TDC -db -bbox -sgen 2200 946 4940 2026
+preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_0_M01_AXIS_DebugCT 1 3 4 3340 986 NJ 986 NJ 986 4870J
+preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_1_M00_BB 1 4 1 3970 1126n
+preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_1_M01_AXIS_DebugCT 1 4 3 N 1146 NJ 1146 NJ
+preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_2_M00_BB 1 5 2 4500 1126 NJ
+preplace netloc TDC_Calib|TDC|BeltBus_TDL_Channel_2_M01_AXIS_DebugCT 1 5 2 4520 1286 NJ
+preplace netloc TDC_Calib|TDC|Conn1 1 0 3 NJ 986 NJ 986 2830
+preplace netloc TDC_Calib|TDC|Conn4 1 3 4 3350 1006 NJ 1006 NJ 1006 NJ
+preplace netloc TDC_Calib|TDC|Conn5 1 0 4 2190J 956 NJ 956 NJ 956 3380
+preplace netloc TDC_Calib|TDC|Conn6 1 0 5 NJ 1708 NJ 1708 NJ 1708 NJ 1708 3970
+levelinfo -pg 1 0 140 460 830 1330 11121 11520 11900 12320 12740 12920
+levelinfo -hier TDC_Calib * 1350 1620 1860 2340 5340 5800 *
+levelinfo -hier TDC_Calib|TDC * 2310 2580 3150 3740 4310 4714 *
+pagesize -pg 1 -db -bbox -sgen -150 0 13050 3260
+pagesize -hier TDC_Calib -db -bbox -sgen 1190 914 6070 2474
+pagesize -hier TDC_Calib|TDC -db -bbox -sgen 2160 946 4900 1886
 "
 }
-
+0

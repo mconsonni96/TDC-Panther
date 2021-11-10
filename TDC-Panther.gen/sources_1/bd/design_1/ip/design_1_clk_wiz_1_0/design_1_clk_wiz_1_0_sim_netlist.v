@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-// Date        : Mon Nov  8 10:13:30 2021
+// Date        : Tue Nov  9 11:44:01 2021
 // Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/mconsonni/Desktop/Tesi/Projects/TDC-Panther/TDC-Panther.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_sim_netlist.v
@@ -15,34 +15,28 @@
 (* NotValidForBitStream *)
 module design_1_clk_wiz_1_0
    (clk_out1,
-    reset,
     locked,
     clk_in1);
   output clk_out1;
-  input reset;
   output locked;
   input clk_in1;
 
   (* IBUF_LOW_PWR *) wire clk_in1;
   wire clk_out1;
   wire locked;
-  wire reset;
 
   design_1_clk_wiz_1_0_design_1_clk_wiz_1_0_clk_wiz inst
        (.clk_in1(clk_in1),
         .clk_out1(clk_out1),
-        .locked(locked),
-        .reset(reset));
+        .locked(locked));
 endmodule
 
 (* ORIG_REF_NAME = "design_1_clk_wiz_1_0_clk_wiz" *) 
 module design_1_clk_wiz_1_0_design_1_clk_wiz_1_0_clk_wiz
    (clk_out1,
-    reset,
     locked,
     clk_in1);
   output clk_out1;
-  input reset;
   output locked;
   input clk_in1;
 
@@ -53,7 +47,6 @@ module design_1_clk_wiz_1_0_design_1_clk_wiz_1_0_clk_wiz
   wire clkfbout_buf_design_1_clk_wiz_1_0;
   wire clkfbout_design_1_clk_wiz_1_0;
   wire locked;
-  wire reset;
   wire NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED;
@@ -171,7 +164,7 @@ module design_1_clk_wiz_1_0_design_1_clk_wiz_1_0_clk_wiz
         .PSEN(1'b0),
         .PSINCDEC(1'b0),
         .PWRDWN(1'b0),
-        .RST(reset));
+        .RST(1'b0));
 endmodule
 `ifndef GLBL
 `define GLBL

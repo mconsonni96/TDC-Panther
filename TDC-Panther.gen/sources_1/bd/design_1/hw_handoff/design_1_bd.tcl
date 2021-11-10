@@ -188,16 +188,17 @@ proc create_hier_cell_Sync { parentCell nameHier } {
   # Create instance: BeltBus_TDL_Channel_0, and set properties
   set BeltBus_TDL_Channel_0 [ create_bd_cell -type ip -vlnv DigiLAB:hier:BeltBus_TDL_Channel_TDC:3.5 BeltBus_TDL_Channel_0 ]
   set_property -dict [ list \
-   CONFIG.BIT_SMP_PRE_TDL {2} \
+   CONFIG.BIT_SMP_PRE_TDL {64} \
    CONFIG.BIT_SMP_TDL {1024} \
    CONFIG.BIT_SUB_INT {12} \
    CONFIG.BIT_UNCALIBRATED {12} \
+   CONFIG.BUFFERING_STAGE {false} \
    CONFIG.CEC_VS_CTD_COUNTER {CTD} \
    CONFIG.DEBUG_MODE {true} \
    CONFIG.DEBUG_MODE_CT {true} \
    CONFIG.DEBUG_PORT_DECODER {true} \
    CONFIG.MAX_VALID_TAP_POS {1023} \
-   CONFIG.MIN_VALID_TAP_POS {-2} \
+   CONFIG.MIN_VALID_TAP_POS {-64} \
    CONFIG.NUMBER_OF_TDL {4} \
    CONFIG.NUM_TAP_PRE_TDL {64} \
    CONFIG.NUM_TAP_TDL {1024} \
@@ -341,16 +342,17 @@ proc create_hier_cell_Ch2 { parentCell nameHier } {
   # Create instance: BeltBus_TDL_Channel_2, and set properties
   set BeltBus_TDL_Channel_2 [ create_bd_cell -type ip -vlnv DigiLAB:hier:BeltBus_TDL_Channel_TDC:3.5 BeltBus_TDL_Channel_2 ]
   set_property -dict [ list \
-   CONFIG.BIT_SMP_PRE_TDL {2} \
+   CONFIG.BIT_SMP_PRE_TDL {64} \
    CONFIG.BIT_SMP_TDL {1024} \
    CONFIG.BIT_SUB_INT {12} \
    CONFIG.BIT_UNCALIBRATED {12} \
+   CONFIG.BUFFERING_STAGE {false} \
    CONFIG.CEC_VS_CTD_COUNTER {CTD} \
    CONFIG.DEBUG_MODE {true} \
    CONFIG.DEBUG_MODE_CT {true} \
    CONFIG.DEBUG_PORT_DECODER {true} \
    CONFIG.MAX_VALID_TAP_POS {1023} \
-   CONFIG.MIN_VALID_TAP_POS {-2} \
+   CONFIG.MIN_VALID_TAP_POS {-64} \
    CONFIG.NUMBER_OF_TDL {4} \
    CONFIG.NUM_CH {2} \
    CONFIG.NUM_NODE {2} \
@@ -478,7 +480,7 @@ proc create_hier_cell_Ch1 { parentCell nameHier } {
   # Create instance: BeltBus_TDL_Channel_1, and set properties
   set BeltBus_TDL_Channel_1 [ create_bd_cell -type ip -vlnv DigiLAB:hier:BeltBus_TDL_Channel_TDC:3.5 BeltBus_TDL_Channel_1 ]
   set_property -dict [ list \
-   CONFIG.BIT_SMP_PRE_TDL {2} \
+   CONFIG.BIT_SMP_PRE_TDL {64} \
    CONFIG.BIT_SMP_TDL {1024} \
    CONFIG.BIT_SUB_INT {12} \
    CONFIG.BIT_UNCALIBRATED {12} \
@@ -488,7 +490,7 @@ proc create_hier_cell_Ch1 { parentCell nameHier } {
    CONFIG.DEBUG_MODE_CT {true} \
    CONFIG.DEBUG_PORT_DECODER {true} \
    CONFIG.MAX_VALID_TAP_POS {1023} \
-   CONFIG.MIN_VALID_TAP_POS {-2} \
+   CONFIG.MIN_VALID_TAP_POS {-64} \
    CONFIG.NUMBER_OF_TDL {4} \
    CONFIG.NUM_CH {1} \
    CONFIG.NUM_NODE {1} \
@@ -854,6 +856,7 @@ proc create_hier_cell_TDC_Calib { parentCell nameHier } {
    CONFIG.CLKOUT1_JITTER {103.303} \
    CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {400.00032} \
    CONFIG.MMCM_CLKOUT0_DIVIDE_F {2.500} \
+   CONFIG.USE_RESET {false} \
  ] $clk_wiz_1
 
   # Create instance: util_ds_buf_0, and set properties

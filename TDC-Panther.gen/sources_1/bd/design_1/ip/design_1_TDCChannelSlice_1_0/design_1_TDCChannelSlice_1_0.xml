@@ -2070,7 +2070,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.FORCECALIBRATE.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.GATE.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.READ_REG.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.READ_REG.PortType" xilinx:valueSource="weak"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.READ_REG.PortType" xilinx:valueSource="weak" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.READ_REG.PortType.PROP_SRC" xilinx:valueSource="weak"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RESTART_CALIBRATION.LAYERED_METADATA" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.RESTART_CALIBRATION.NUM_READ_OUTSTANDING" xilinx:valuePermission="bd_and_user"/>

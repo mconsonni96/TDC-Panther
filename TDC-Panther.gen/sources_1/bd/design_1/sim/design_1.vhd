@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
---Date        : Mon Nov  8 14:18:26 2021
+--Date        : Wed Nov 10 14:38:20 2021
 --Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -2513,6 +2513,7 @@ entity m05_couplers_imp_KSVY9L is
     M_AXI_arready : in STD_LOGIC;
     M_AXI_arregion : out STD_LOGIC;
     M_AXI_arsize : out STD_LOGIC;
+    M_AXI_aruser : out STD_LOGIC;
     M_AXI_arvalid : out STD_LOGIC;
     M_AXI_awaddr : out STD_LOGIC;
     M_AXI_awburst : out STD_LOGIC;
@@ -2525,6 +2526,7 @@ entity m05_couplers_imp_KSVY9L is
     M_AXI_awready : in STD_LOGIC;
     M_AXI_awregion : out STD_LOGIC;
     M_AXI_awsize : out STD_LOGIC;
+    M_AXI_awuser : out STD_LOGIC;
     M_AXI_awvalid : out STD_LOGIC;
     M_AXI_bid : in STD_LOGIC;
     M_AXI_bready : out STD_LOGIC;
@@ -2554,6 +2556,7 @@ entity m05_couplers_imp_KSVY9L is
     S_AXI_arready : out STD_LOGIC;
     S_AXI_arregion : in STD_LOGIC;
     S_AXI_arsize : in STD_LOGIC;
+    S_AXI_aruser : in STD_LOGIC;
     S_AXI_arvalid : in STD_LOGIC;
     S_AXI_awaddr : in STD_LOGIC;
     S_AXI_awburst : in STD_LOGIC;
@@ -2566,6 +2569,7 @@ entity m05_couplers_imp_KSVY9L is
     S_AXI_awready : out STD_LOGIC;
     S_AXI_awregion : in STD_LOGIC;
     S_AXI_awsize : in STD_LOGIC;
+    S_AXI_awuser : in STD_LOGIC;
     S_AXI_awvalid : in STD_LOGIC;
     S_AXI_bid : out STD_LOGIC;
     S_AXI_bready : in STD_LOGIC;
@@ -2597,6 +2601,7 @@ architecture STRUCTURE of m05_couplers_imp_KSVY9L is
   signal m05_couplers_to_m05_couplers_ARREADY : STD_LOGIC;
   signal m05_couplers_to_m05_couplers_ARREGION : STD_LOGIC;
   signal m05_couplers_to_m05_couplers_ARSIZE : STD_LOGIC;
+  signal m05_couplers_to_m05_couplers_ARUSER : STD_LOGIC;
   signal m05_couplers_to_m05_couplers_ARVALID : STD_LOGIC;
   signal m05_couplers_to_m05_couplers_AWADDR : STD_LOGIC;
   signal m05_couplers_to_m05_couplers_AWBURST : STD_LOGIC;
@@ -2609,6 +2614,7 @@ architecture STRUCTURE of m05_couplers_imp_KSVY9L is
   signal m05_couplers_to_m05_couplers_AWREADY : STD_LOGIC;
   signal m05_couplers_to_m05_couplers_AWREGION : STD_LOGIC;
   signal m05_couplers_to_m05_couplers_AWSIZE : STD_LOGIC;
+  signal m05_couplers_to_m05_couplers_AWUSER : STD_LOGIC;
   signal m05_couplers_to_m05_couplers_AWVALID : STD_LOGIC;
   signal m05_couplers_to_m05_couplers_BID : STD_LOGIC;
   signal m05_couplers_to_m05_couplers_BREADY : STD_LOGIC;
@@ -2636,6 +2642,7 @@ begin
   M_AXI_arqos <= m05_couplers_to_m05_couplers_ARQOS;
   M_AXI_arregion <= m05_couplers_to_m05_couplers_ARREGION;
   M_AXI_arsize <= m05_couplers_to_m05_couplers_ARSIZE;
+  M_AXI_aruser <= m05_couplers_to_m05_couplers_ARUSER;
   M_AXI_arvalid <= m05_couplers_to_m05_couplers_ARVALID;
   M_AXI_awaddr <= m05_couplers_to_m05_couplers_AWADDR;
   M_AXI_awburst <= m05_couplers_to_m05_couplers_AWBURST;
@@ -2647,6 +2654,7 @@ begin
   M_AXI_awqos <= m05_couplers_to_m05_couplers_AWQOS;
   M_AXI_awregion <= m05_couplers_to_m05_couplers_AWREGION;
   M_AXI_awsize <= m05_couplers_to_m05_couplers_AWSIZE;
+  M_AXI_awuser <= m05_couplers_to_m05_couplers_AWUSER;
   M_AXI_awvalid <= m05_couplers_to_m05_couplers_AWVALID;
   M_AXI_bready <= m05_couplers_to_m05_couplers_BREADY;
   M_AXI_rready <= m05_couplers_to_m05_couplers_RREADY;
@@ -2676,6 +2684,7 @@ begin
   m05_couplers_to_m05_couplers_ARREADY <= M_AXI_arready;
   m05_couplers_to_m05_couplers_ARREGION <= S_AXI_arregion;
   m05_couplers_to_m05_couplers_ARSIZE <= S_AXI_arsize;
+  m05_couplers_to_m05_couplers_ARUSER <= S_AXI_aruser;
   m05_couplers_to_m05_couplers_ARVALID <= S_AXI_arvalid;
   m05_couplers_to_m05_couplers_AWADDR <= S_AXI_awaddr;
   m05_couplers_to_m05_couplers_AWBURST <= S_AXI_awburst;
@@ -2688,6 +2697,7 @@ begin
   m05_couplers_to_m05_couplers_AWREADY <= M_AXI_awready;
   m05_couplers_to_m05_couplers_AWREGION <= S_AXI_awregion;
   m05_couplers_to_m05_couplers_AWSIZE <= S_AXI_awsize;
+  m05_couplers_to_m05_couplers_AWUSER <= S_AXI_awuser;
   m05_couplers_to_m05_couplers_AWVALID <= S_AXI_awvalid;
   m05_couplers_to_m05_couplers_BID <= M_AXI_bid;
   m05_couplers_to_m05_couplers_BREADY <= S_AXI_bready;
@@ -2724,6 +2734,7 @@ entity m06_couplers_imp_18J6S0R is
     M_AXI_arready : in STD_LOGIC;
     M_AXI_arregion : out STD_LOGIC;
     M_AXI_arsize : out STD_LOGIC;
+    M_AXI_aruser : out STD_LOGIC;
     M_AXI_arvalid : out STD_LOGIC;
     M_AXI_awaddr : out STD_LOGIC;
     M_AXI_awburst : out STD_LOGIC;
@@ -2736,6 +2747,7 @@ entity m06_couplers_imp_18J6S0R is
     M_AXI_awready : in STD_LOGIC;
     M_AXI_awregion : out STD_LOGIC;
     M_AXI_awsize : out STD_LOGIC;
+    M_AXI_awuser : out STD_LOGIC;
     M_AXI_awvalid : out STD_LOGIC;
     M_AXI_bid : in STD_LOGIC;
     M_AXI_bready : out STD_LOGIC;
@@ -2765,6 +2777,7 @@ entity m06_couplers_imp_18J6S0R is
     S_AXI_arready : out STD_LOGIC;
     S_AXI_arregion : in STD_LOGIC;
     S_AXI_arsize : in STD_LOGIC;
+    S_AXI_aruser : in STD_LOGIC;
     S_AXI_arvalid : in STD_LOGIC;
     S_AXI_awaddr : in STD_LOGIC;
     S_AXI_awburst : in STD_LOGIC;
@@ -2777,6 +2790,7 @@ entity m06_couplers_imp_18J6S0R is
     S_AXI_awready : out STD_LOGIC;
     S_AXI_awregion : in STD_LOGIC;
     S_AXI_awsize : in STD_LOGIC;
+    S_AXI_awuser : in STD_LOGIC;
     S_AXI_awvalid : in STD_LOGIC;
     S_AXI_bid : out STD_LOGIC;
     S_AXI_bready : in STD_LOGIC;
@@ -2808,6 +2822,7 @@ architecture STRUCTURE of m06_couplers_imp_18J6S0R is
   signal m06_couplers_to_m06_couplers_ARREADY : STD_LOGIC;
   signal m06_couplers_to_m06_couplers_ARREGION : STD_LOGIC;
   signal m06_couplers_to_m06_couplers_ARSIZE : STD_LOGIC;
+  signal m06_couplers_to_m06_couplers_ARUSER : STD_LOGIC;
   signal m06_couplers_to_m06_couplers_ARVALID : STD_LOGIC;
   signal m06_couplers_to_m06_couplers_AWADDR : STD_LOGIC;
   signal m06_couplers_to_m06_couplers_AWBURST : STD_LOGIC;
@@ -2820,6 +2835,7 @@ architecture STRUCTURE of m06_couplers_imp_18J6S0R is
   signal m06_couplers_to_m06_couplers_AWREADY : STD_LOGIC;
   signal m06_couplers_to_m06_couplers_AWREGION : STD_LOGIC;
   signal m06_couplers_to_m06_couplers_AWSIZE : STD_LOGIC;
+  signal m06_couplers_to_m06_couplers_AWUSER : STD_LOGIC;
   signal m06_couplers_to_m06_couplers_AWVALID : STD_LOGIC;
   signal m06_couplers_to_m06_couplers_BID : STD_LOGIC;
   signal m06_couplers_to_m06_couplers_BREADY : STD_LOGIC;
@@ -2847,6 +2863,7 @@ begin
   M_AXI_arqos <= m06_couplers_to_m06_couplers_ARQOS;
   M_AXI_arregion <= m06_couplers_to_m06_couplers_ARREGION;
   M_AXI_arsize <= m06_couplers_to_m06_couplers_ARSIZE;
+  M_AXI_aruser <= m06_couplers_to_m06_couplers_ARUSER;
   M_AXI_arvalid <= m06_couplers_to_m06_couplers_ARVALID;
   M_AXI_awaddr <= m06_couplers_to_m06_couplers_AWADDR;
   M_AXI_awburst <= m06_couplers_to_m06_couplers_AWBURST;
@@ -2858,6 +2875,7 @@ begin
   M_AXI_awqos <= m06_couplers_to_m06_couplers_AWQOS;
   M_AXI_awregion <= m06_couplers_to_m06_couplers_AWREGION;
   M_AXI_awsize <= m06_couplers_to_m06_couplers_AWSIZE;
+  M_AXI_awuser <= m06_couplers_to_m06_couplers_AWUSER;
   M_AXI_awvalid <= m06_couplers_to_m06_couplers_AWVALID;
   M_AXI_bready <= m06_couplers_to_m06_couplers_BREADY;
   M_AXI_rready <= m06_couplers_to_m06_couplers_RREADY;
@@ -2887,6 +2905,7 @@ begin
   m06_couplers_to_m06_couplers_ARREADY <= M_AXI_arready;
   m06_couplers_to_m06_couplers_ARREGION <= S_AXI_arregion;
   m06_couplers_to_m06_couplers_ARSIZE <= S_AXI_arsize;
+  m06_couplers_to_m06_couplers_ARUSER <= S_AXI_aruser;
   m06_couplers_to_m06_couplers_ARVALID <= S_AXI_arvalid;
   m06_couplers_to_m06_couplers_AWADDR <= S_AXI_awaddr;
   m06_couplers_to_m06_couplers_AWBURST <= S_AXI_awburst;
@@ -2899,6 +2918,7 @@ begin
   m06_couplers_to_m06_couplers_AWREADY <= M_AXI_awready;
   m06_couplers_to_m06_couplers_AWREGION <= S_AXI_awregion;
   m06_couplers_to_m06_couplers_AWSIZE <= S_AXI_awsize;
+  m06_couplers_to_m06_couplers_AWUSER <= S_AXI_awuser;
   m06_couplers_to_m06_couplers_AWVALID <= S_AXI_awvalid;
   m06_couplers_to_m06_couplers_BID <= M_AXI_bid;
   m06_couplers_to_m06_couplers_BREADY <= S_AXI_bready;
@@ -4535,6 +4555,7 @@ entity design_1_axi_interconnect_0_0 is
     M05_AXI_arready : in STD_LOGIC;
     M05_AXI_arregion : out STD_LOGIC;
     M05_AXI_arsize : out STD_LOGIC;
+    M05_AXI_aruser : out STD_LOGIC;
     M05_AXI_arvalid : out STD_LOGIC;
     M05_AXI_awaddr : out STD_LOGIC;
     M05_AXI_awburst : out STD_LOGIC;
@@ -4547,6 +4568,7 @@ entity design_1_axi_interconnect_0_0 is
     M05_AXI_awready : in STD_LOGIC;
     M05_AXI_awregion : out STD_LOGIC;
     M05_AXI_awsize : out STD_LOGIC;
+    M05_AXI_awuser : out STD_LOGIC;
     M05_AXI_awvalid : out STD_LOGIC;
     M05_AXI_bid : in STD_LOGIC;
     M05_AXI_bready : out STD_LOGIC;
@@ -4576,6 +4598,7 @@ entity design_1_axi_interconnect_0_0 is
     M06_AXI_arready : in STD_LOGIC;
     M06_AXI_arregion : out STD_LOGIC;
     M06_AXI_arsize : out STD_LOGIC;
+    M06_AXI_aruser : out STD_LOGIC;
     M06_AXI_arvalid : out STD_LOGIC;
     M06_AXI_awaddr : out STD_LOGIC;
     M06_AXI_awburst : out STD_LOGIC;
@@ -4588,6 +4611,7 @@ entity design_1_axi_interconnect_0_0 is
     M06_AXI_awready : in STD_LOGIC;
     M06_AXI_awregion : out STD_LOGIC;
     M06_AXI_awsize : out STD_LOGIC;
+    M06_AXI_awuser : out STD_LOGIC;
     M06_AXI_awvalid : out STD_LOGIC;
     M06_AXI_bid : in STD_LOGIC;
     M06_AXI_bready : out STD_LOGIC;
@@ -4964,6 +4988,7 @@ architecture STRUCTURE of design_1_axi_interconnect_0_0 is
   signal m05_couplers_to_axi_interconnect_0_ARREADY : STD_LOGIC;
   signal m05_couplers_to_axi_interconnect_0_ARREGION : STD_LOGIC;
   signal m05_couplers_to_axi_interconnect_0_ARSIZE : STD_LOGIC;
+  signal m05_couplers_to_axi_interconnect_0_ARUSER : STD_LOGIC;
   signal m05_couplers_to_axi_interconnect_0_ARVALID : STD_LOGIC;
   signal m05_couplers_to_axi_interconnect_0_AWADDR : STD_LOGIC;
   signal m05_couplers_to_axi_interconnect_0_AWBURST : STD_LOGIC;
@@ -4976,6 +5001,7 @@ architecture STRUCTURE of design_1_axi_interconnect_0_0 is
   signal m05_couplers_to_axi_interconnect_0_AWREADY : STD_LOGIC;
   signal m05_couplers_to_axi_interconnect_0_AWREGION : STD_LOGIC;
   signal m05_couplers_to_axi_interconnect_0_AWSIZE : STD_LOGIC;
+  signal m05_couplers_to_axi_interconnect_0_AWUSER : STD_LOGIC;
   signal m05_couplers_to_axi_interconnect_0_AWVALID : STD_LOGIC;
   signal m05_couplers_to_axi_interconnect_0_BID : STD_LOGIC;
   signal m05_couplers_to_axi_interconnect_0_BREADY : STD_LOGIC;
@@ -5003,6 +5029,7 @@ architecture STRUCTURE of design_1_axi_interconnect_0_0 is
   signal m06_couplers_to_axi_interconnect_0_ARREADY : STD_LOGIC;
   signal m06_couplers_to_axi_interconnect_0_ARREGION : STD_LOGIC;
   signal m06_couplers_to_axi_interconnect_0_ARSIZE : STD_LOGIC;
+  signal m06_couplers_to_axi_interconnect_0_ARUSER : STD_LOGIC;
   signal m06_couplers_to_axi_interconnect_0_ARVALID : STD_LOGIC;
   signal m06_couplers_to_axi_interconnect_0_AWADDR : STD_LOGIC;
   signal m06_couplers_to_axi_interconnect_0_AWBURST : STD_LOGIC;
@@ -5015,6 +5042,7 @@ architecture STRUCTURE of design_1_axi_interconnect_0_0 is
   signal m06_couplers_to_axi_interconnect_0_AWREADY : STD_LOGIC;
   signal m06_couplers_to_axi_interconnect_0_AWREGION : STD_LOGIC;
   signal m06_couplers_to_axi_interconnect_0_AWSIZE : STD_LOGIC;
+  signal m06_couplers_to_axi_interconnect_0_AWUSER : STD_LOGIC;
   signal m06_couplers_to_axi_interconnect_0_AWVALID : STD_LOGIC;
   signal m06_couplers_to_axi_interconnect_0_BID : STD_LOGIC;
   signal m06_couplers_to_axi_interconnect_0_BREADY : STD_LOGIC;
@@ -5302,6 +5330,7 @@ architecture STRUCTURE of design_1_axi_interconnect_0_0 is
   signal xbar_to_m05_couplers_ARREADY : STD_LOGIC;
   signal xbar_to_m05_couplers_ARREGION : STD_LOGIC_VECTOR ( 23 downto 20 );
   signal xbar_to_m05_couplers_ARSIZE : STD_LOGIC_VECTOR ( 17 downto 15 );
+  signal xbar_to_m05_couplers_ARUSER : STD_LOGIC_VECTOR ( 23 downto 20 );
   signal xbar_to_m05_couplers_ARVALID : STD_LOGIC_VECTOR ( 5 to 5 );
   signal xbar_to_m05_couplers_AWADDR : STD_LOGIC_VECTOR ( 185 downto 155 );
   signal xbar_to_m05_couplers_AWBURST : STD_LOGIC_VECTOR ( 11 downto 10 );
@@ -5314,6 +5343,7 @@ architecture STRUCTURE of design_1_axi_interconnect_0_0 is
   signal xbar_to_m05_couplers_AWREADY : STD_LOGIC;
   signal xbar_to_m05_couplers_AWREGION : STD_LOGIC_VECTOR ( 23 downto 20 );
   signal xbar_to_m05_couplers_AWSIZE : STD_LOGIC_VECTOR ( 17 downto 15 );
+  signal xbar_to_m05_couplers_AWUSER : STD_LOGIC_VECTOR ( 23 downto 20 );
   signal xbar_to_m05_couplers_AWVALID : STD_LOGIC_VECTOR ( 5 to 5 );
   signal xbar_to_m05_couplers_BID : STD_LOGIC;
   signal xbar_to_m05_couplers_BREADY : STD_LOGIC_VECTOR ( 5 to 5 );
@@ -5341,6 +5371,7 @@ architecture STRUCTURE of design_1_axi_interconnect_0_0 is
   signal xbar_to_m06_couplers_ARREADY : STD_LOGIC;
   signal xbar_to_m06_couplers_ARREGION : STD_LOGIC_VECTOR ( 27 downto 24 );
   signal xbar_to_m06_couplers_ARSIZE : STD_LOGIC_VECTOR ( 20 downto 18 );
+  signal xbar_to_m06_couplers_ARUSER : STD_LOGIC_VECTOR ( 27 downto 24 );
   signal xbar_to_m06_couplers_ARVALID : STD_LOGIC_VECTOR ( 6 to 6 );
   signal xbar_to_m06_couplers_AWADDR : STD_LOGIC_VECTOR ( 216 downto 186 );
   signal xbar_to_m06_couplers_AWBURST : STD_LOGIC_VECTOR ( 13 downto 12 );
@@ -5353,6 +5384,7 @@ architecture STRUCTURE of design_1_axi_interconnect_0_0 is
   signal xbar_to_m06_couplers_AWREADY : STD_LOGIC;
   signal xbar_to_m06_couplers_AWREGION : STD_LOGIC_VECTOR ( 27 downto 24 );
   signal xbar_to_m06_couplers_AWSIZE : STD_LOGIC_VECTOR ( 20 downto 18 );
+  signal xbar_to_m06_couplers_AWUSER : STD_LOGIC_VECTOR ( 27 downto 24 );
   signal xbar_to_m06_couplers_AWVALID : STD_LOGIC_VECTOR ( 6 to 6 );
   signal xbar_to_m06_couplers_BID : STD_LOGIC;
   signal xbar_to_m06_couplers_BREADY : STD_LOGIC_VECTOR ( 6 to 6 );
@@ -5552,6 +5584,7 @@ begin
   M05_AXI_arqos <= m05_couplers_to_axi_interconnect_0_ARQOS;
   M05_AXI_arregion <= m05_couplers_to_axi_interconnect_0_ARREGION;
   M05_AXI_arsize <= m05_couplers_to_axi_interconnect_0_ARSIZE;
+  M05_AXI_aruser <= m05_couplers_to_axi_interconnect_0_ARUSER;
   M05_AXI_arvalid <= m05_couplers_to_axi_interconnect_0_ARVALID;
   M05_AXI_awaddr <= m05_couplers_to_axi_interconnect_0_AWADDR;
   M05_AXI_awburst <= m05_couplers_to_axi_interconnect_0_AWBURST;
@@ -5563,6 +5596,7 @@ begin
   M05_AXI_awqos <= m05_couplers_to_axi_interconnect_0_AWQOS;
   M05_AXI_awregion <= m05_couplers_to_axi_interconnect_0_AWREGION;
   M05_AXI_awsize <= m05_couplers_to_axi_interconnect_0_AWSIZE;
+  M05_AXI_awuser <= m05_couplers_to_axi_interconnect_0_AWUSER;
   M05_AXI_awvalid <= m05_couplers_to_axi_interconnect_0_AWVALID;
   M05_AXI_bready <= m05_couplers_to_axi_interconnect_0_BREADY;
   M05_AXI_rready <= m05_couplers_to_axi_interconnect_0_RREADY;
@@ -5582,6 +5616,7 @@ begin
   M06_AXI_arqos <= m06_couplers_to_axi_interconnect_0_ARQOS;
   M06_AXI_arregion <= m06_couplers_to_axi_interconnect_0_ARREGION;
   M06_AXI_arsize <= m06_couplers_to_axi_interconnect_0_ARSIZE;
+  M06_AXI_aruser <= m06_couplers_to_axi_interconnect_0_ARUSER;
   M06_AXI_arvalid <= m06_couplers_to_axi_interconnect_0_ARVALID;
   M06_AXI_awaddr <= m06_couplers_to_axi_interconnect_0_AWADDR;
   M06_AXI_awburst <= m06_couplers_to_axi_interconnect_0_AWBURST;
@@ -5593,6 +5628,7 @@ begin
   M06_AXI_awqos <= m06_couplers_to_axi_interconnect_0_AWQOS;
   M06_AXI_awregion <= m06_couplers_to_axi_interconnect_0_AWREGION;
   M06_AXI_awsize <= m06_couplers_to_axi_interconnect_0_AWSIZE;
+  M06_AXI_awuser <= m06_couplers_to_axi_interconnect_0_AWUSER;
   M06_AXI_awvalid <= m06_couplers_to_axi_interconnect_0_AWVALID;
   M06_AXI_bready <= m06_couplers_to_axi_interconnect_0_BREADY;
   M06_AXI_rready <= m06_couplers_to_axi_interconnect_0_RREADY;
@@ -6103,6 +6139,7 @@ m05_couplers: entity work.m05_couplers_imp_KSVY9L
       M_AXI_arready => m05_couplers_to_axi_interconnect_0_ARREADY,
       M_AXI_arregion => m05_couplers_to_axi_interconnect_0_ARREGION,
       M_AXI_arsize => m05_couplers_to_axi_interconnect_0_ARSIZE,
+      M_AXI_aruser => m05_couplers_to_axi_interconnect_0_ARUSER,
       M_AXI_arvalid => m05_couplers_to_axi_interconnect_0_ARVALID,
       M_AXI_awaddr => m05_couplers_to_axi_interconnect_0_AWADDR,
       M_AXI_awburst => m05_couplers_to_axi_interconnect_0_AWBURST,
@@ -6115,6 +6152,7 @@ m05_couplers: entity work.m05_couplers_imp_KSVY9L
       M_AXI_awready => m05_couplers_to_axi_interconnect_0_AWREADY,
       M_AXI_awregion => m05_couplers_to_axi_interconnect_0_AWREGION,
       M_AXI_awsize => m05_couplers_to_axi_interconnect_0_AWSIZE,
+      M_AXI_awuser => m05_couplers_to_axi_interconnect_0_AWUSER,
       M_AXI_awvalid => m05_couplers_to_axi_interconnect_0_AWVALID,
       M_AXI_bid => m05_couplers_to_axi_interconnect_0_BID,
       M_AXI_bready => m05_couplers_to_axi_interconnect_0_BREADY,
@@ -6144,6 +6182,7 @@ m05_couplers: entity work.m05_couplers_imp_KSVY9L
       S_AXI_arready => xbar_to_m05_couplers_ARREADY,
       S_AXI_arregion => xbar_to_m05_couplers_ARREGION(20),
       S_AXI_arsize => xbar_to_m05_couplers_ARSIZE(15),
+      S_AXI_aruser => xbar_to_m05_couplers_ARUSER(20),
       S_AXI_arvalid => xbar_to_m05_couplers_ARVALID(5),
       S_AXI_awaddr => xbar_to_m05_couplers_AWADDR(155),
       S_AXI_awburst => xbar_to_m05_couplers_AWBURST(10),
@@ -6156,6 +6195,7 @@ m05_couplers: entity work.m05_couplers_imp_KSVY9L
       S_AXI_awready => xbar_to_m05_couplers_AWREADY,
       S_AXI_awregion => xbar_to_m05_couplers_AWREGION(20),
       S_AXI_awsize => xbar_to_m05_couplers_AWSIZE(15),
+      S_AXI_awuser => xbar_to_m05_couplers_AWUSER(20),
       S_AXI_awvalid => xbar_to_m05_couplers_AWVALID(5),
       S_AXI_bid => xbar_to_m05_couplers_BID,
       S_AXI_bready => xbar_to_m05_couplers_BREADY(5),
@@ -6188,6 +6228,7 @@ m06_couplers: entity work.m06_couplers_imp_18J6S0R
       M_AXI_arready => m06_couplers_to_axi_interconnect_0_ARREADY,
       M_AXI_arregion => m06_couplers_to_axi_interconnect_0_ARREGION,
       M_AXI_arsize => m06_couplers_to_axi_interconnect_0_ARSIZE,
+      M_AXI_aruser => m06_couplers_to_axi_interconnect_0_ARUSER,
       M_AXI_arvalid => m06_couplers_to_axi_interconnect_0_ARVALID,
       M_AXI_awaddr => m06_couplers_to_axi_interconnect_0_AWADDR,
       M_AXI_awburst => m06_couplers_to_axi_interconnect_0_AWBURST,
@@ -6200,6 +6241,7 @@ m06_couplers: entity work.m06_couplers_imp_18J6S0R
       M_AXI_awready => m06_couplers_to_axi_interconnect_0_AWREADY,
       M_AXI_awregion => m06_couplers_to_axi_interconnect_0_AWREGION,
       M_AXI_awsize => m06_couplers_to_axi_interconnect_0_AWSIZE,
+      M_AXI_awuser => m06_couplers_to_axi_interconnect_0_AWUSER,
       M_AXI_awvalid => m06_couplers_to_axi_interconnect_0_AWVALID,
       M_AXI_bid => m06_couplers_to_axi_interconnect_0_BID,
       M_AXI_bready => m06_couplers_to_axi_interconnect_0_BREADY,
@@ -6229,6 +6271,7 @@ m06_couplers: entity work.m06_couplers_imp_18J6S0R
       S_AXI_arready => xbar_to_m06_couplers_ARREADY,
       S_AXI_arregion => xbar_to_m06_couplers_ARREGION(24),
       S_AXI_arsize => xbar_to_m06_couplers_ARSIZE(18),
+      S_AXI_aruser => xbar_to_m06_couplers_ARUSER(24),
       S_AXI_arvalid => xbar_to_m06_couplers_ARVALID(6),
       S_AXI_awaddr => xbar_to_m06_couplers_AWADDR(186),
       S_AXI_awburst => xbar_to_m06_couplers_AWBURST(12),
@@ -6241,6 +6284,7 @@ m06_couplers: entity work.m06_couplers_imp_18J6S0R
       S_AXI_awready => xbar_to_m06_couplers_AWREADY,
       S_AXI_awregion => xbar_to_m06_couplers_AWREGION(24),
       S_AXI_awsize => xbar_to_m06_couplers_AWSIZE(18),
+      S_AXI_awuser => xbar_to_m06_couplers_AWUSER(24),
       S_AXI_awvalid => xbar_to_m06_couplers_AWVALID(6),
       S_AXI_bid => xbar_to_m06_couplers_BID,
       S_AXI_bready => xbar_to_m06_couplers_BREADY(6),
@@ -6569,7 +6613,10 @@ xbar: component design_1_xbar_0
       m_axi_arsize(8 downto 6) => xbar_to_m02_couplers_ARSIZE(8 downto 6),
       m_axi_arsize(5 downto 3) => xbar_to_m01_couplers_ARSIZE(5 downto 3),
       m_axi_arsize(2 downto 0) => xbar_to_m00_couplers_ARSIZE(2 downto 0),
-      m_axi_aruser(35 downto 0) => NLW_xbar_m_axi_aruser_UNCONNECTED(35 downto 0),
+      m_axi_aruser(35 downto 28) => NLW_xbar_m_axi_aruser_UNCONNECTED(35 downto 28),
+      m_axi_aruser(27 downto 24) => xbar_to_m06_couplers_ARUSER(27 downto 24),
+      m_axi_aruser(23 downto 20) => xbar_to_m05_couplers_ARUSER(23 downto 20),
+      m_axi_aruser(19 downto 0) => NLW_xbar_m_axi_aruser_UNCONNECTED(19 downto 0),
       m_axi_arvalid(8) => xbar_to_m08_couplers_ARVALID(8),
       m_axi_arvalid(7) => xbar_to_m07_couplers_ARVALID(7),
       m_axi_arvalid(6) => xbar_to_m06_couplers_ARVALID(6),
@@ -6678,7 +6725,10 @@ xbar: component design_1_xbar_0
       m_axi_awsize(8 downto 6) => xbar_to_m02_couplers_AWSIZE(8 downto 6),
       m_axi_awsize(5 downto 3) => xbar_to_m01_couplers_AWSIZE(5 downto 3),
       m_axi_awsize(2 downto 0) => xbar_to_m00_couplers_AWSIZE(2 downto 0),
-      m_axi_awuser(35 downto 0) => NLW_xbar_m_axi_awuser_UNCONNECTED(35 downto 0),
+      m_axi_awuser(35 downto 28) => NLW_xbar_m_axi_awuser_UNCONNECTED(35 downto 28),
+      m_axi_awuser(27 downto 24) => xbar_to_m06_couplers_AWUSER(27 downto 24),
+      m_axi_awuser(23 downto 20) => xbar_to_m05_couplers_AWUSER(23 downto 20),
+      m_axi_awuser(19 downto 0) => NLW_xbar_m_axi_awuser_UNCONNECTED(19 downto 0),
       m_axi_awvalid(8) => xbar_to_m08_couplers_AWVALID(8),
       m_axi_awvalid(7) => xbar_to_m07_couplers_AWVALID(7),
       m_axi_awvalid(6) => xbar_to_m06_couplers_AWVALID(6),
@@ -7682,7 +7732,6 @@ architecture STRUCTURE of TDC_Calib_imp_4BAZB9 is
   end component design_1_AXI4_TDC_Wrapper_0_0;
   component design_1_clk_wiz_1_0 is
   port (
-    reset : in STD_LOGIC;
     clk_in1 : in STD_LOGIC;
     clk_out1 : out STD_LOGIC;
     locked : out STD_LOGIC
@@ -7917,8 +7966,7 @@ clk_wiz_1: component design_1_clk_wiz_1_0
      port map (
       clk_in1 => util_ds_buf_1_BUFG_O(0),
       clk_out1 => clk_wiz_1_clk_out1,
-      locked => NLW_clk_wiz_1_locked_UNCONNECTED,
-      reset => '0'
+      locked => NLW_clk_wiz_1_locked_UNCONNECTED
     );
 util_ds_buf_0: component design_1_util_ds_buf_0_0
      port map (
@@ -8211,8 +8259,8 @@ architecture STRUCTURE of design_1 is
     clk_in1_p : in STD_LOGIC;
     clk_in1_n : in STD_LOGIC;
     clk_out1 : out STD_LOGIC;
-    locked : out STD_LOGIC;
-    clk_out2 : out STD_LOGIC
+    clk_out2 : out STD_LOGIC;
+    locked : out STD_LOGIC
   );
   end component design_1_clk_wiz_0_0;
   component design_1_proc_sys_reset_0_0 is
@@ -8549,6 +8597,7 @@ architecture STRUCTURE of design_1 is
   signal NLW_axi_interconnect_0_M05_AXI_arqos_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M05_AXI_arregion_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M05_AXI_arsize_UNCONNECTED : STD_LOGIC;
+  signal NLW_axi_interconnect_0_M05_AXI_aruser_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M05_AXI_arvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M05_AXI_awaddr_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M05_AXI_awburst_UNCONNECTED : STD_LOGIC;
@@ -8560,6 +8609,7 @@ architecture STRUCTURE of design_1 is
   signal NLW_axi_interconnect_0_M05_AXI_awqos_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M05_AXI_awregion_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M05_AXI_awsize_UNCONNECTED : STD_LOGIC;
+  signal NLW_axi_interconnect_0_M05_AXI_awuser_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M05_AXI_awvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M05_AXI_bready_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M05_AXI_rready_UNCONNECTED : STD_LOGIC;
@@ -8577,6 +8627,7 @@ architecture STRUCTURE of design_1 is
   signal NLW_axi_interconnect_0_M06_AXI_arqos_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M06_AXI_arregion_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M06_AXI_arsize_UNCONNECTED : STD_LOGIC;
+  signal NLW_axi_interconnect_0_M06_AXI_aruser_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M06_AXI_arvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M06_AXI_awaddr_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M06_AXI_awburst_UNCONNECTED : STD_LOGIC;
@@ -8588,6 +8639,7 @@ architecture STRUCTURE of design_1 is
   signal NLW_axi_interconnect_0_M06_AXI_awqos_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M06_AXI_awregion_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M06_AXI_awsize_UNCONNECTED : STD_LOGIC;
+  signal NLW_axi_interconnect_0_M06_AXI_awuser_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M06_AXI_awvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M06_AXI_bready_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_interconnect_0_M06_AXI_rready_UNCONNECTED : STD_LOGIC;
@@ -9092,6 +9144,7 @@ axi_interconnect_0: entity work.design_1_axi_interconnect_0_0
       M05_AXI_arready => '0',
       M05_AXI_arregion => NLW_axi_interconnect_0_M05_AXI_arregion_UNCONNECTED,
       M05_AXI_arsize => NLW_axi_interconnect_0_M05_AXI_arsize_UNCONNECTED,
+      M05_AXI_aruser => NLW_axi_interconnect_0_M05_AXI_aruser_UNCONNECTED,
       M05_AXI_arvalid => NLW_axi_interconnect_0_M05_AXI_arvalid_UNCONNECTED,
       M05_AXI_awaddr => NLW_axi_interconnect_0_M05_AXI_awaddr_UNCONNECTED,
       M05_AXI_awburst => NLW_axi_interconnect_0_M05_AXI_awburst_UNCONNECTED,
@@ -9104,6 +9157,7 @@ axi_interconnect_0: entity work.design_1_axi_interconnect_0_0
       M05_AXI_awready => '0',
       M05_AXI_awregion => NLW_axi_interconnect_0_M05_AXI_awregion_UNCONNECTED,
       M05_AXI_awsize => NLW_axi_interconnect_0_M05_AXI_awsize_UNCONNECTED,
+      M05_AXI_awuser => NLW_axi_interconnect_0_M05_AXI_awuser_UNCONNECTED,
       M05_AXI_awvalid => NLW_axi_interconnect_0_M05_AXI_awvalid_UNCONNECTED,
       M05_AXI_bid => '0',
       M05_AXI_bready => NLW_axi_interconnect_0_M05_AXI_bready_UNCONNECTED,
@@ -9133,6 +9187,7 @@ axi_interconnect_0: entity work.design_1_axi_interconnect_0_0
       M06_AXI_arready => '0',
       M06_AXI_arregion => NLW_axi_interconnect_0_M06_AXI_arregion_UNCONNECTED,
       M06_AXI_arsize => NLW_axi_interconnect_0_M06_AXI_arsize_UNCONNECTED,
+      M06_AXI_aruser => NLW_axi_interconnect_0_M06_AXI_aruser_UNCONNECTED,
       M06_AXI_arvalid => NLW_axi_interconnect_0_M06_AXI_arvalid_UNCONNECTED,
       M06_AXI_awaddr => NLW_axi_interconnect_0_M06_AXI_awaddr_UNCONNECTED,
       M06_AXI_awburst => NLW_axi_interconnect_0_M06_AXI_awburst_UNCONNECTED,
@@ -9145,6 +9200,7 @@ axi_interconnect_0: entity work.design_1_axi_interconnect_0_0
       M06_AXI_awready => '0',
       M06_AXI_awregion => NLW_axi_interconnect_0_M06_AXI_awregion_UNCONNECTED,
       M06_AXI_awsize => NLW_axi_interconnect_0_M06_AXI_awsize_UNCONNECTED,
+      M06_AXI_awuser => NLW_axi_interconnect_0_M06_AXI_awuser_UNCONNECTED,
       M06_AXI_awvalid => NLW_axi_interconnect_0_M06_AXI_awvalid_UNCONNECTED,
       M06_AXI_bid => '0',
       M06_AXI_bready => NLW_axi_interconnect_0_M06_AXI_bready_UNCONNECTED,
