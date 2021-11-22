@@ -188,7 +188,7 @@ proc create_hier_cell_Sync { parentCell nameHier } {
   # Create instance: BeltBus_TDL_Channel_0, and set properties
   set BeltBus_TDL_Channel_0 [ create_bd_cell -type ip -vlnv DigiLAB:hier:BeltBus_TDL_Channel_TDC:3.5 BeltBus_TDL_Channel_0 ]
   set_property -dict [ list \
-   CONFIG.BIT_SMP_PRE_TDL {64} \
+   CONFIG.BIT_SMP_PRE_TDL {256} \
    CONFIG.BIT_SMP_TDL {1024} \
    CONFIG.BIT_SUB_INT {12} \
    CONFIG.BIT_UNCALIBRATED {12} \
@@ -198,9 +198,9 @@ proc create_hier_cell_Sync { parentCell nameHier } {
    CONFIG.DEBUG_MODE_CT {true} \
    CONFIG.DEBUG_PORT_DECODER {true} \
    CONFIG.MAX_VALID_TAP_POS {1023} \
-   CONFIG.MIN_VALID_TAP_POS {-64} \
+   CONFIG.MIN_VALID_TAP_POS {-256} \
    CONFIG.NUMBER_OF_TDL {4} \
-   CONFIG.NUM_TAP_PRE_TDL {64} \
+   CONFIG.NUM_TAP_PRE_TDL {256} \
    CONFIG.NUM_TAP_TDL {1024} \
    CONFIG.PASS_THROUGH {Both} \
    CONFIG.STEP_VALID_TAP_POS {32} \
@@ -342,7 +342,7 @@ proc create_hier_cell_Ch2 { parentCell nameHier } {
   # Create instance: BeltBus_TDL_Channel_2, and set properties
   set BeltBus_TDL_Channel_2 [ create_bd_cell -type ip -vlnv DigiLAB:hier:BeltBus_TDL_Channel_TDC:3.5 BeltBus_TDL_Channel_2 ]
   set_property -dict [ list \
-   CONFIG.BIT_SMP_PRE_TDL {64} \
+   CONFIG.BIT_SMP_PRE_TDL {256} \
    CONFIG.BIT_SMP_TDL {1024} \
    CONFIG.BIT_SUB_INT {12} \
    CONFIG.BIT_UNCALIBRATED {12} \
@@ -352,11 +352,11 @@ proc create_hier_cell_Ch2 { parentCell nameHier } {
    CONFIG.DEBUG_MODE_CT {true} \
    CONFIG.DEBUG_PORT_DECODER {true} \
    CONFIG.MAX_VALID_TAP_POS {1023} \
-   CONFIG.MIN_VALID_TAP_POS {-64} \
+   CONFIG.MIN_VALID_TAP_POS {-256} \
    CONFIG.NUMBER_OF_TDL {4} \
    CONFIG.NUM_CH {2} \
    CONFIG.NUM_NODE {2} \
-   CONFIG.NUM_TAP_PRE_TDL {64} \
+   CONFIG.NUM_TAP_PRE_TDL {256} \
    CONFIG.NUM_TAP_TDL {1024} \
    CONFIG.STEP_VALID_TAP_POS {32} \
    CONFIG.VALID_POSITION_TAP_INIT {0} \
@@ -480,7 +480,7 @@ proc create_hier_cell_Ch1 { parentCell nameHier } {
   # Create instance: BeltBus_TDL_Channel_1, and set properties
   set BeltBus_TDL_Channel_1 [ create_bd_cell -type ip -vlnv DigiLAB:hier:BeltBus_TDL_Channel_TDC:3.5 BeltBus_TDL_Channel_1 ]
   set_property -dict [ list \
-   CONFIG.BIT_SMP_PRE_TDL {64} \
+   CONFIG.BIT_SMP_PRE_TDL {256} \
    CONFIG.BIT_SMP_TDL {1024} \
    CONFIG.BIT_SUB_INT {12} \
    CONFIG.BIT_UNCALIBRATED {12} \
@@ -490,11 +490,11 @@ proc create_hier_cell_Ch1 { parentCell nameHier } {
    CONFIG.DEBUG_MODE_CT {true} \
    CONFIG.DEBUG_PORT_DECODER {true} \
    CONFIG.MAX_VALID_TAP_POS {1023} \
-   CONFIG.MIN_VALID_TAP_POS {-64} \
+   CONFIG.MIN_VALID_TAP_POS {-256} \
    CONFIG.NUMBER_OF_TDL {4} \
    CONFIG.NUM_CH {1} \
    CONFIG.NUM_NODE {1} \
-   CONFIG.NUM_TAP_PRE_TDL {64} \
+   CONFIG.NUM_TAP_PRE_TDL {256} \
    CONFIG.NUM_TAP_TDL {1024} \
    CONFIG.STEP_VALID_TAP_POS {32} \
    CONFIG.VALID_POSITION_TAP_INIT {0} \

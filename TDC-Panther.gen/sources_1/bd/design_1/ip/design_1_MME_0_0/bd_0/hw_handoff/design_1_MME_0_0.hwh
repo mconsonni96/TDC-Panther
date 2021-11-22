@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Nov 10 14:38:21 2021" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov 16 13:47:51 2021" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="kintex7" BOARD="digilab:panther_te0741_325_2cf:part0:2.0" DEVICE="7k325t" NAME="bd_cd85" PACKAGE="fbg676" SPEEDGRADE="-2"/>
 
