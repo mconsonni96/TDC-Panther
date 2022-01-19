@@ -154,7 +154,7 @@
     <spirit:parameter>
       <spirit:name>VALID_POSITION_TAP_INIT</spirit:name>
       <spirit:displayName>Valid Position Tap Initialization</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VALID_POSITION_TAP_INIT" spirit:minimum="0" spirit:maximum="1279" spirit:rangeType="long">0</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.VALID_POSITION_TAP_INIT" spirit:minimum="0" spirit:maximum="639" spirit:rangeType="long">0</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>VALID_NUMBER_OF_TDL_INIT</spirit:name>
@@ -213,7 +213,7 @@
     <spirit:parameter>
       <spirit:name>NUM_TAP_TDL</spirit:name>
       <spirit:displayName>Number of Taps</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_TAP_TDL" spirit:minimum="4" spirit:maximum="4096" spirit:rangeType="long">1024</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_TAP_TDL" spirit:minimum="4" spirit:maximum="4096" spirit:rangeType="long">512</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>NUMBER_OF_TDL</spirit:name>
@@ -223,7 +223,7 @@
     <spirit:parameter>
       <spirit:name>BIT_SMP_TDL</spirit:name>
       <spirit:displayName>Taps Sampled of the TDL</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_SMP_TDL" spirit:minimum="1" spirit:maximum="1024" spirit:rangeType="long">1024</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_SMP_TDL" spirit:minimum="1" spirit:maximum="512" spirit:rangeType="long">512</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>BUFFERING_STAGE</spirit:name>
@@ -267,7 +267,7 @@
     <spirit:parameter>
       <spirit:name>MAX_VALID_TAP_POS</spirit:name>
       <spirit:displayName>Maximum Valid Position</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MAX_VALID_TAP_POS" spirit:minimum="0" spirit:maximum="1023" spirit:rangeType="long">1023</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MAX_VALID_TAP_POS" spirit:minimum="0" spirit:maximum="511" spirit:rangeType="long">511</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -279,7 +279,7 @@
     <spirit:parameter>
       <spirit:name>MIN_VALID_TAP_POS</spirit:name>
       <spirit:displayName>Minimum Valid Position</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MIN_VALID_TAP_POS" spirit:minimum="-256" spirit:maximum="1022" spirit:rangeType="long">-256</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MIN_VALID_TAP_POS" spirit:minimum="-128" spirit:maximum="510" spirit:rangeType="long">-128</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -483,7 +483,7 @@
     <spirit:parameter>
       <spirit:name>STEP_VALID_TAP_POS</spirit:name>
       <spirit:displayName>Step of Valid Position</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.STEP_VALID_TAP_POS" spirit:minimum="1" spirit:maximum="1279" spirit:rangeType="long">32</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.STEP_VALID_TAP_POS" spirit:minimum="1" spirit:maximum="639" spirit:rangeType="long">16</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -704,7 +704,7 @@
     <spirit:parameter>
       <spirit:name>BIT_SUB_INT</spirit:name>
       <spirit:displayName>Bit Sub-Interpolated</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_SUB_INT" spirit:minimum="2" spirit:maximum="16" spirit:rangeType="long">12</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_SUB_INT" spirit:minimum="2" spirit:maximum="16" spirit:rangeType="long">11</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -1077,7 +1077,7 @@
     <spirit:parameter>
       <spirit:name>BIT_UNCALIBRATED</spirit:name>
       <spirit:displayName>Bit Uncalibrated</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_UNCALIBRATED" spirit:minimum="2" spirit:maximum="16" spirit:rangeType="long">12</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_UNCALIBRATED" spirit:minimum="2" spirit:maximum="16" spirit:rangeType="long">11</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -1383,12 +1383,12 @@
     <spirit:parameter>
       <spirit:name>NUM_TAP_PRE_TDL</spirit:name>
       <spirit:displayName>Number of Taps</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_TAP_PRE_TDL" spirit:minimum="0" spirit:maximum="256" spirit:rangeType="long">256</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.NUM_TAP_PRE_TDL" spirit:minimum="0" spirit:maximum="256" spirit:rangeType="long">128</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>BIT_SMP_PRE_TDL</spirit:name>
       <spirit:displayName>Taps Sampled of the PRE-TDL</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_SMP_PRE_TDL" spirit:minimum="0" spirit:maximum="256" spirit:rangeType="long">256</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BIT_SMP_PRE_TDL" spirit:minimum="0" spirit:maximum="128" spirit:rangeType="long">128</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>CALIB_EVENT</spirit:name>

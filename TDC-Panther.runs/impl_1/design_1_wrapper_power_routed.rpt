@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date             : Tue Nov 16 14:01:44 2021
+| Date             : Wed Jan 19 15:05:56 2022
 | Host             : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 4.666        |
+| Total On-Chip Power (W)  | 2.943        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 4.466        |
-| Device Static (W)        | 0.201        |
+| Dynamic (W)              | 2.757        |
+| Device Static (W)        | 0.186        |
 | Effective TJA (C/W)      | 1.9          |
-| Max Ambient (C)          | 76.3         |
-| Junction Temperature (C) | 33.7         |
+| Max Ambient (C)          | 79.5         |
+| Junction Temperature (C) | 30.5         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.866 |       18 |       --- |             --- |
-| Slice Logic              |     1.818 |   122759 |       --- |             --- |
-|   LUT as Logic           |     1.418 |    39329 |    203800 |           19.30 |
-|   CARRY4                 |     0.222 |     5880 |     50950 |           11.54 |
-|   Register               |     0.176 |    58702 |    407600 |           14.40 |
+| Clocks                   |     0.507 |       18 |       --- |             --- |
+| Slice Logic              |     1.025 |    86003 |       --- |             --- |
+|   LUT as Logic           |     0.812 |    28259 |    203800 |           13.87 |
+|   CARRY4                 |     0.114 |     3492 |     50950 |            6.85 |
+|   Register               |     0.098 |    40212 |    407600 |            9.87 |
 |   LUT as Distributed RAM |    <0.001 |      504 |     64000 |            0.79 |
 |   F7/F8 Muxes            |    <0.001 |     3463 |    203800 |            1.70 |
-|   LUT as Shift Register  |    <0.001 |      376 |     64000 |            0.59 |
+|   LUT as Shift Register  |    <0.001 |      375 |     64000 |            0.59 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
-|   Others                 |     0.000 |     7745 |       --- |             --- |
-| Signals                  |     1.365 |    72515 |       --- |             --- |
-| Block RAM                |     0.172 |     83.5 |       445 |           18.76 |
-| MMCM                     |     0.219 |        2 |        10 |           20.00 |
+|   Others                 |     0.000 |     4478 |       --- |             --- |
+| Signals                  |     0.714 |    53131 |       --- |             --- |
+| Block RAM                |     0.152 |     71.5 |       445 |           16.07 |
+| MMCM                     |     0.332 |        2 |        10 |           20.00 |
 | DSPs                     |    <0.001 |        1 |       840 |            0.12 |
 | I/O                      |     0.024 |       12 |       400 |            3.00 |
 | XADC                     |     0.002 |        1 |       --- |             --- |
-| Static Power             |     0.201 |          |           |                 |
-| Total                    |     4.666 |          |           |                 |
+| Static Power             |     0.186 |          |           |                 |
+| Total                    |     2.943 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,8 +79,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     4.312 |       4.211 |      0.100 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.155 |       0.126 |      0.030 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     2.479 |       2.392 |      0.087 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.218 |       0.189 |      0.029 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.006 |       0.005 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -88,7 +88,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.019 |       0.014 |      0.005 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.016 |       0.012 |      0.004 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -138,10 +138,10 @@ Table of Contents
 +------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------------+
 | clk_out1_design_1_clk_wiz_0_0                                                | design_1_i/clk_wiz_0/inst/clk_out1                                                |            10.0 |
 | clk_out1_design_1_clk_wiz_0_0                                                | design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0                           |            10.0 |
-| clk_out1_design_1_clk_wiz_1_0                                                | design_1_i/TDC_Calib/clk_wiz_1/inst/clk_out1_design_1_clk_wiz_1_0                 |             2.5 |
+| clk_out1_design_1_clk_wiz_1_0                                                | design_1_i/TDC_Calib/clk_wiz_1/inst/clk_out1_design_1_clk_wiz_1_0                 |             2.4 |
 | clk_out2_design_1_clk_wiz_0_0                                                | design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0                           |             6.2 |
 | clkfbout_design_1_clk_wiz_0_0                                                | design_1_i/clk_wiz_0/inst/clkfbout_design_1_clk_wiz_0_0                           |            10.0 |
-| clkfbout_design_1_clk_wiz_1_0                                                | design_1_i/TDC_Calib/clk_wiz_1/inst/clkfbout_design_1_clk_wiz_1_0                 |            12.0 |
+| clkfbout_design_1_clk_wiz_1_0                                                | design_1_i/TDC_Calib/clk_wiz_1/inst/clkfbout_design_1_clk_wiz_1_0                 |            19.2 |
 | design_1_i/TDC_Calib/TDC/Ch1/InputLogic_0/U0/Inst_Divider_IL/AsyncEventIn    | design_1_i/TDC_Calib/TDC/Ch1/InputLogic_0/U0/Inst_Divider_IL/DividedEventOut      |             5.0 |
 | design_1_i/TDC_Calib/TDC/Ch1/InputLogic_0/U0/Inst_Stretcher_IL/AsyncEventIn  | design_1_i/TDC_Calib/TDC/Ch1/InputLogic_0/U0/Inst_Stretcher_IL/StretchedEventOut  |             5.0 |
 | design_1_i/TDC_Calib/TDC/Ch2/InputLogic_0/U0/Inst_Divider_IL/AsyncEventIn    | design_1_i/TDC_Calib/TDC/Ch2/InputLogic_0/U0/Inst_Divider_IL/DividedEventOut      |             5.0 |
@@ -163,33 +163,33 @@ Table of Contents
 +-------------------------------+-----------+
 | Name                          | Power (W) |
 +-------------------------------+-----------+
-| design_1_wrapper              |     4.466 |
-|   design_1_i                  |     4.466 |
-|     AXI4Stream_UART_0         |     0.009 |
-|       U0                      |     0.009 |
+| design_1_wrapper              |     2.757 |
+|   design_1_i                  |     2.757 |
+|     AXI4Stream_UART_0         |     0.008 |
+|       U0                      |     0.008 |
 |     BeltBus_TDCCounter_0      |     0.003 |
 |       U0                      |     0.003 |
-|     BeltBus_TDCHistogrammer_0 |     0.075 |
-|       U0                      |     0.075 |
-|     BeltBus_TDCHistogrammer_1 |     0.075 |
-|       U0                      |     0.075 |
-|     BeltBus_TTM_0             |     0.018 |
-|       U0                      |     0.018 |
-|     MME_0                     |     0.025 |
-|       U0                      |     0.025 |
+|     BeltBus_TDCHistogrammer_0 |     0.077 |
+|       U0                      |     0.077 |
+|     BeltBus_TDCHistogrammer_1 |     0.077 |
+|       U0                      |     0.077 |
+|     BeltBus_TTM_0             |     0.019 |
+|       U0                      |     0.019 |
+|     MME_0                     |     0.026 |
+|       U0                      |     0.026 |
 |     Master                    |     0.002 |
 |       blk_mem_gen_0           |     0.001 |
-|     TDC_Calib                 |     4.146 |
-|       AXI4_TDC_Wrapper_0      |     0.034 |
-|       TDC                     |     3.975 |
-|       clk_wiz_1               |     0.129 |
+|     TDC_Calib                 |     2.432 |
+|       AXI4_TDC_Wrapper_0      |     0.035 |
+|       TDC                     |     2.148 |
+|       clk_wiz_1               |     0.242 |
 |       util_ds_buf_0           |     0.006 |
-|     axi_interconnect_0        |     0.009 |
+|     axi_interconnect_0        |     0.010 |
 |       m01_couplers            |     0.002 |
 |       m02_couplers            |     0.002 |
 |       m03_couplers            |     0.002 |
 |       m07_couplers            |     0.002 |
-|       xbar                    |     0.002 |
+|       xbar                    |     0.003 |
 |     clk_wiz_0                 |     0.099 |
 |       inst                    |     0.099 |
 |     xadc_wiz_0                |     0.003 |

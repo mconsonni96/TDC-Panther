@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
---Date        : Tue Nov 16 13:47:50 2021
+--Date        : Wed Jan 19 14:57:36 2022
 --Host        : mconsonni-All-Series running 64-bit Ubuntu 20.04.3 LTS
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -297,7 +297,7 @@ architecture STRUCTURE of design_1_BeltBus_TDL_Channel_0_0 is
     clk : in STD_LOGIC;
     AsyncInput : in STD_LOGIC;
     m00_axis_undeco_tvalid : out STD_LOGIC;
-    m00_axis_undeco_tdata : out STD_LOGIC_VECTOR ( 4095 downto 0 );
+    m00_axis_undeco_tdata : out STD_LOGIC_VECTOR ( 2047 downto 0 );
     ValidPositionTap : in STD_LOGIC_VECTOR ( 31 downto 0 );
     ValidNumberOfTdl : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
@@ -307,7 +307,7 @@ architecture STRUCTURE of design_1_BeltBus_TDL_Channel_0_0 is
     reset : in STD_LOGIC;
     clk : in STD_LOGIC;
     s00_axis_undeco_tvalid : in STD_LOGIC;
-    s00_axis_undeco_tdata : in STD_LOGIC_VECTOR ( 4095 downto 0 );
+    s00_axis_undeco_tdata : in STD_LOGIC_VECTOR ( 2047 downto 0 );
     m00_axis_subint_tvalid : out STD_LOGIC;
     m00_axis_subint_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
     subInterpolationMatrix : in STD_LOGIC_VECTOR ( 31 downto 0 )
@@ -397,7 +397,7 @@ architecture STRUCTURE of design_1_BeltBus_TDL_Channel_0_0 is
   signal AXI4Stream_OverflowCounter_0_M00_AXIS_beltbus_TVALID : STD_LOGIC;
   signal AXI4Stream_Synchronizer_0_M00_AXIS_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal AXI4Stream_Synchronizer_0_M00_AXIS_TVALID : STD_LOGIC;
-  signal AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA : STD_LOGIC_VECTOR ( 4095 downto 0 );
+  signal AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA : STD_LOGIC_VECTOR ( 2047 downto 0 );
   signal AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TVALID : STD_LOGIC;
   signal AsyncInput_1 : STD_LOGIC;
   signal BeltBus_NodeInserter_0_M00_AXIS_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -472,7 +472,7 @@ AXI4Stream_IperDecoder_0: component design_1_AXI4Stream_IperDecoder_0_2
       m00_axis_subint_tdata(15 downto 0) => AXI4Stream_IperDecoder_0_M00_SubInt_TDATA(15 downto 0),
       m00_axis_subint_tvalid => AXI4Stream_IperDecoder_0_M00_SubInt_TVALID,
       reset => Net,
-      s00_axis_undeco_tdata(4095 downto 0) => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA(4095 downto 0),
+      s00_axis_undeco_tdata(2047 downto 0) => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA(2047 downto 0),
       s00_axis_undeco_tvalid => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TVALID,
       subInterpolationMatrix(31 downto 0) => subInterpolationMatrix_1(31 downto 0)
     );
@@ -521,7 +521,7 @@ AXI4Stream_X7S_VirtualTDL_0: component design_1_AXI4Stream_X7S_VirtualTDL_0_2
       ValidNumberOfTdl(31 downto 0) => ValidNumberOfTDL_1(31 downto 0),
       ValidPositionTap(31 downto 0) => ValidPositionTap_1(31 downto 0),
       clk => Net2,
-      m00_axis_undeco_tdata(4095 downto 0) => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA(4095 downto 0),
+      m00_axis_undeco_tdata(2047 downto 0) => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA(2047 downto 0),
       m00_axis_undeco_tvalid => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TVALID,
       reset => Net
     );
@@ -614,7 +614,7 @@ architecture STRUCTURE of design_1_BeltBus_TDL_Channel_1_0 is
     clk : in STD_LOGIC;
     AsyncInput : in STD_LOGIC;
     m00_axis_undeco_tvalid : out STD_LOGIC;
-    m00_axis_undeco_tdata : out STD_LOGIC_VECTOR ( 4095 downto 0 );
+    m00_axis_undeco_tdata : out STD_LOGIC_VECTOR ( 2047 downto 0 );
     ValidPositionTap : in STD_LOGIC_VECTOR ( 31 downto 0 );
     ValidNumberOfTdl : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
@@ -624,7 +624,7 @@ architecture STRUCTURE of design_1_BeltBus_TDL_Channel_1_0 is
     reset : in STD_LOGIC;
     clk : in STD_LOGIC;
     s00_axis_undeco_tvalid : in STD_LOGIC;
-    s00_axis_undeco_tdata : in STD_LOGIC_VECTOR ( 4095 downto 0 );
+    s00_axis_undeco_tdata : in STD_LOGIC_VECTOR ( 2047 downto 0 );
     m00_axis_subint_tvalid : out STD_LOGIC;
     m00_axis_subint_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
     subInterpolationMatrix : in STD_LOGIC_VECTOR ( 31 downto 0 )
@@ -712,7 +712,7 @@ architecture STRUCTURE of design_1_BeltBus_TDL_Channel_1_0 is
   signal AXI4Stream_OverflowCounter_0_M00_AXIS_beltbus_TVALID : STD_LOGIC;
   signal AXI4Stream_Synchronizer_0_M00_AXIS_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal AXI4Stream_Synchronizer_0_M00_AXIS_TVALID : STD_LOGIC;
-  signal AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA : STD_LOGIC_VECTOR ( 4095 downto 0 );
+  signal AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA : STD_LOGIC_VECTOR ( 2047 downto 0 );
   signal AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TVALID : STD_LOGIC;
   signal AsyncInput_1 : STD_LOGIC;
   signal BeltBus_NodeInserter_0_M00_BB_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -783,7 +783,7 @@ AXI4Stream_IperDecoder_0: component design_1_AXI4Stream_IperDecoder_0_0
       m00_axis_subint_tdata(15 downto 0) => AXI4Stream_IperDecoder_0_M00_SubInt_TDATA(15 downto 0),
       m00_axis_subint_tvalid => AXI4Stream_IperDecoder_0_M00_SubInt_TVALID,
       reset => Net,
-      s00_axis_undeco_tdata(4095 downto 0) => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA(4095 downto 0),
+      s00_axis_undeco_tdata(2047 downto 0) => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA(2047 downto 0),
       s00_axis_undeco_tvalid => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TVALID,
       subInterpolationMatrix(31 downto 0) => subInterpolationMatrix_1(31 downto 0)
     );
@@ -832,7 +832,7 @@ AXI4Stream_X7S_VirtualTDL_0: component design_1_AXI4Stream_X7S_VirtualTDL_0_0
       ValidNumberOfTdl(31 downto 0) => ValidNumberOfTDL_1(31 downto 0),
       ValidPositionTap(31 downto 0) => ValidPositionTap_1(31 downto 0),
       clk => Net2,
-      m00_axis_undeco_tdata(4095 downto 0) => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA(4095 downto 0),
+      m00_axis_undeco_tdata(2047 downto 0) => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA(2047 downto 0),
       m00_axis_undeco_tvalid => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TVALID,
       reset => Net
     );
@@ -891,7 +891,7 @@ architecture STRUCTURE of design_1_BeltBus_TDL_Channel_2_0 is
     clk : in STD_LOGIC;
     AsyncInput : in STD_LOGIC;
     m00_axis_undeco_tvalid : out STD_LOGIC;
-    m00_axis_undeco_tdata : out STD_LOGIC_VECTOR ( 4095 downto 0 );
+    m00_axis_undeco_tdata : out STD_LOGIC_VECTOR ( 2047 downto 0 );
     ValidPositionTap : in STD_LOGIC_VECTOR ( 31 downto 0 );
     ValidNumberOfTdl : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
@@ -901,7 +901,7 @@ architecture STRUCTURE of design_1_BeltBus_TDL_Channel_2_0 is
     reset : in STD_LOGIC;
     clk : in STD_LOGIC;
     s00_axis_undeco_tvalid : in STD_LOGIC;
-    s00_axis_undeco_tdata : in STD_LOGIC_VECTOR ( 4095 downto 0 );
+    s00_axis_undeco_tdata : in STD_LOGIC_VECTOR ( 2047 downto 0 );
     m00_axis_subint_tvalid : out STD_LOGIC;
     m00_axis_subint_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
     subInterpolationMatrix : in STD_LOGIC_VECTOR ( 31 downto 0 )
@@ -989,7 +989,7 @@ architecture STRUCTURE of design_1_BeltBus_TDL_Channel_2_0 is
   signal AXI4Stream_OverflowCounter_0_M00_AXIS_beltbus_TVALID : STD_LOGIC;
   signal AXI4Stream_Synchronizer_0_M00_AXIS_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal AXI4Stream_Synchronizer_0_M00_AXIS_TVALID : STD_LOGIC;
-  signal AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA : STD_LOGIC_VECTOR ( 4095 downto 0 );
+  signal AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA : STD_LOGIC_VECTOR ( 2047 downto 0 );
   signal AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TVALID : STD_LOGIC;
   signal AsyncInput_1 : STD_LOGIC;
   signal BeltBus_NodeInserter_0_M00_BB_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -1058,7 +1058,7 @@ AXI4Stream_IperDecoder_0: component design_1_AXI4Stream_IperDecoder_0_1
       m00_axis_subint_tdata(15 downto 0) => AXI4Stream_IperDecoder_0_M00_SubInt_TDATA(15 downto 0),
       m00_axis_subint_tvalid => AXI4Stream_IperDecoder_0_M00_SubInt_TVALID,
       reset => Net,
-      s00_axis_undeco_tdata(4095 downto 0) => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA(4095 downto 0),
+      s00_axis_undeco_tdata(2047 downto 0) => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA(2047 downto 0),
       s00_axis_undeco_tvalid => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TVALID,
       subInterpolationMatrix(31 downto 0) => subInterpolationMatrix_1(31 downto 0)
     );
@@ -1107,7 +1107,7 @@ AXI4Stream_X7S_VirtualTDL_0: component design_1_AXI4Stream_X7S_VirtualTDL_0_1
       ValidNumberOfTdl(31 downto 0) => ValidNumberOfTDL_1(31 downto 0),
       ValidPositionTap(31 downto 0) => ValidPositionTap_1(31 downto 0),
       clk => Net2,
-      m00_axis_undeco_tdata(4095 downto 0) => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA(4095 downto 0),
+      m00_axis_undeco_tdata(2047 downto 0) => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TDATA(2047 downto 0),
       m00_axis_undeco_tvalid => AXI4Stream_X7S_VirtualTDL_0_M00_AXIS_Undeco_TVALID,
       reset => Net
     );
@@ -8671,7 +8671,7 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_PARAMETER of sys_diff_clock_clk_n : signal is "XIL_INTERFACENAME sys_diff_clock, CAN_DEBUG false, FREQ_HZ 100000000";
   attribute X_INTERFACE_INFO of sys_diff_clock_clk_p : signal is "xilinx.com:interface:diff_clock:1.0 sys_diff_clock CLK_P";
   attribute X_INTERFACE_INFO of tdc_diff_clock_clk_n : signal is "xilinx.com:interface:diff_clock:1.0 tdc_diff_clock CLK_N";
-  attribute X_INTERFACE_PARAMETER of tdc_diff_clock_clk_n : signal is "XIL_INTERFACENAME tdc_diff_clock, CAN_DEBUG false, FREQ_HZ 416666666";
+  attribute X_INTERFACE_PARAMETER of tdc_diff_clock_clk_n : signal is "XIL_INTERFACENAME tdc_diff_clock, CAN_DEBUG false, FREQ_HZ 156250000";
   attribute X_INTERFACE_INFO of tdc_diff_clock_clk_p : signal is "xilinx.com:interface:diff_clock:1.0 tdc_diff_clock CLK_P";
 begin
   AXI4Stream_UART_0_UART_RxD <= USB_UART_rxd;

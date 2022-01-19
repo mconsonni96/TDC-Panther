@@ -188,22 +188,22 @@ proc create_hier_cell_Sync { parentCell nameHier } {
   # Create instance: BeltBus_TDL_Channel_0, and set properties
   set BeltBus_TDL_Channel_0 [ create_bd_cell -type ip -vlnv DigiLAB:hier:BeltBus_TDL_Channel_TDC:3.5 BeltBus_TDL_Channel_0 ]
   set_property -dict [ list \
-   CONFIG.BIT_SMP_PRE_TDL {256} \
-   CONFIG.BIT_SMP_TDL {1024} \
-   CONFIG.BIT_SUB_INT {12} \
-   CONFIG.BIT_UNCALIBRATED {12} \
+   CONFIG.BIT_SMP_PRE_TDL {128} \
+   CONFIG.BIT_SMP_TDL {512} \
+   CONFIG.BIT_SUB_INT {11} \
+   CONFIG.BIT_UNCALIBRATED {11} \
    CONFIG.BUFFERING_STAGE {false} \
    CONFIG.CEC_VS_CTD_COUNTER {CTD} \
    CONFIG.DEBUG_MODE {true} \
    CONFIG.DEBUG_MODE_CT {true} \
    CONFIG.DEBUG_PORT_DECODER {true} \
-   CONFIG.MAX_VALID_TAP_POS {1023} \
-   CONFIG.MIN_VALID_TAP_POS {-256} \
+   CONFIG.MAX_VALID_TAP_POS {511} \
+   CONFIG.MIN_VALID_TAP_POS {-128} \
    CONFIG.NUMBER_OF_TDL {4} \
-   CONFIG.NUM_TAP_PRE_TDL {256} \
-   CONFIG.NUM_TAP_TDL {1024} \
+   CONFIG.NUM_TAP_PRE_TDL {128} \
+   CONFIG.NUM_TAP_TDL {512} \
    CONFIG.PASS_THROUGH {Both} \
-   CONFIG.STEP_VALID_TAP_POS {32} \
+   CONFIG.STEP_VALID_TAP_POS {16} \
    CONFIG.VALID_POSITION_TAP_INIT {0} \
  ] $BeltBus_TDL_Channel_0
 
@@ -342,23 +342,23 @@ proc create_hier_cell_Ch2 { parentCell nameHier } {
   # Create instance: BeltBus_TDL_Channel_2, and set properties
   set BeltBus_TDL_Channel_2 [ create_bd_cell -type ip -vlnv DigiLAB:hier:BeltBus_TDL_Channel_TDC:3.5 BeltBus_TDL_Channel_2 ]
   set_property -dict [ list \
-   CONFIG.BIT_SMP_PRE_TDL {256} \
-   CONFIG.BIT_SMP_TDL {1024} \
-   CONFIG.BIT_SUB_INT {12} \
-   CONFIG.BIT_UNCALIBRATED {12} \
+   CONFIG.BIT_SMP_PRE_TDL {128} \
+   CONFIG.BIT_SMP_TDL {512} \
+   CONFIG.BIT_SUB_INT {11} \
+   CONFIG.BIT_UNCALIBRATED {11} \
    CONFIG.BUFFERING_STAGE {false} \
    CONFIG.CEC_VS_CTD_COUNTER {CTD} \
    CONFIG.DEBUG_MODE {true} \
    CONFIG.DEBUG_MODE_CT {true} \
    CONFIG.DEBUG_PORT_DECODER {true} \
-   CONFIG.MAX_VALID_TAP_POS {1023} \
-   CONFIG.MIN_VALID_TAP_POS {-256} \
+   CONFIG.MAX_VALID_TAP_POS {511} \
+   CONFIG.MIN_VALID_TAP_POS {-128} \
    CONFIG.NUMBER_OF_TDL {4} \
    CONFIG.NUM_CH {2} \
    CONFIG.NUM_NODE {2} \
-   CONFIG.NUM_TAP_PRE_TDL {256} \
-   CONFIG.NUM_TAP_TDL {1024} \
-   CONFIG.STEP_VALID_TAP_POS {32} \
+   CONFIG.NUM_TAP_PRE_TDL {128} \
+   CONFIG.NUM_TAP_TDL {512} \
+   CONFIG.STEP_VALID_TAP_POS {16} \
    CONFIG.VALID_POSITION_TAP_INIT {0} \
  ] $BeltBus_TDL_Channel_2
 
@@ -480,23 +480,23 @@ proc create_hier_cell_Ch1 { parentCell nameHier } {
   # Create instance: BeltBus_TDL_Channel_1, and set properties
   set BeltBus_TDL_Channel_1 [ create_bd_cell -type ip -vlnv DigiLAB:hier:BeltBus_TDL_Channel_TDC:3.5 BeltBus_TDL_Channel_1 ]
   set_property -dict [ list \
-   CONFIG.BIT_SMP_PRE_TDL {256} \
-   CONFIG.BIT_SMP_TDL {1024} \
-   CONFIG.BIT_SUB_INT {12} \
-   CONFIG.BIT_UNCALIBRATED {12} \
+   CONFIG.BIT_SMP_PRE_TDL {128} \
+   CONFIG.BIT_SMP_TDL {512} \
+   CONFIG.BIT_SUB_INT {11} \
+   CONFIG.BIT_UNCALIBRATED {11} \
    CONFIG.BUFFERING_STAGE {false} \
    CONFIG.CEC_VS_CTD_COUNTER {CTD} \
    CONFIG.DEBUG_MODE {true} \
    CONFIG.DEBUG_MODE_CT {true} \
    CONFIG.DEBUG_PORT_DECODER {true} \
-   CONFIG.MAX_VALID_TAP_POS {1023} \
-   CONFIG.MIN_VALID_TAP_POS {-256} \
+   CONFIG.MAX_VALID_TAP_POS {511} \
+   CONFIG.MIN_VALID_TAP_POS {-128} \
    CONFIG.NUMBER_OF_TDL {4} \
    CONFIG.NUM_CH {1} \
    CONFIG.NUM_NODE {1} \
-   CONFIG.NUM_TAP_PRE_TDL {256} \
-   CONFIG.NUM_TAP_TDL {1024} \
-   CONFIG.STEP_VALID_TAP_POS {32} \
+   CONFIG.NUM_TAP_PRE_TDL {128} \
+   CONFIG.NUM_TAP_TDL {512} \
+   CONFIG.STEP_VALID_TAP_POS {16} \
    CONFIG.VALID_POSITION_TAP_INIT {0} \
  ] $BeltBus_TDL_Channel_1
 
@@ -836,8 +836,8 @@ proc create_hier_cell_TDC_Calib { parentCell nameHier } {
   set AXI4_TDC_Wrapper_0 [ create_bd_cell -type ip -vlnv DigiLAB:ip:AXI4_TDC_Wrapper:5.0 AXI4_TDC_Wrapper_0 ]
   set_property -dict [ list \
    CONFIG.BIT_CALIBRATION {24} \
-   CONFIG.BIT_RESOLUTION {12} \
-   CONFIG.BIT_UNCALIBRATED {12} \
+   CONFIG.BIT_RESOLUTION {11} \
+   CONFIG.BIT_UNCALIBRATED {11} \
    CONFIG.C_S00_AXI_ADDR_ABS {0x44A40000} \
    CONFIG.DEBUG_MODE_CC {false} \
    CONFIG.DEF_CH_STRETCHERLENGTH {6} \
@@ -853,9 +853,16 @@ proc create_hier_cell_TDC_Calib { parentCell nameHier } {
   # Create instance: clk_wiz_1, and set properties
   set clk_wiz_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_1 ]
   set_property -dict [ list \
-   CONFIG.CLKOUT1_JITTER {103.303} \
-   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {400.00032} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {2.500} \
+   CONFIG.CLKIN1_JITTER_PS {64.0} \
+   CONFIG.CLKOUT1_JITTER {119.965} \
+   CONFIG.CLKOUT1_PHASE_ERROR {158.075} \
+   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {416.66667} \
+   CONFIG.MMCM_CLKFBOUT_MULT_F {19.000} \
+   CONFIG.MMCM_CLKIN1_PERIOD {6.400} \
+   CONFIG.MMCM_CLKIN2_PERIOD {10.000} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {2.375} \
+   CONFIG.MMCM_DIVCLK_DIVIDE {3} \
+   CONFIG.PRIM_IN_FREQ {156.25} \
    CONFIG.USE_RESET {false} \
  ] $clk_wiz_1
 
@@ -869,6 +876,7 @@ proc create_hier_cell_TDC_Calib { parentCell nameHier } {
   set util_ds_buf_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.1 util_ds_buf_1 ]
   set_property -dict [ list \
    CONFIG.C_BUF_TYPE {BUFG} \
+   CONFIG.DIFF_CLK_IN_BOARD_INTERFACE {Custom} \
  ] $util_ds_buf_1
 
   # Create interface connections
@@ -1029,7 +1037,7 @@ proc create_root_design { parentCell } {
 
   set tdc_diff_clock [ create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 tdc_diff_clock ]
   set_property -dict [ list \
-   CONFIG.FREQ_HZ {416666666} \
+   CONFIG.FREQ_HZ {156250000} \
    ] $tdc_diff_clock
 
 

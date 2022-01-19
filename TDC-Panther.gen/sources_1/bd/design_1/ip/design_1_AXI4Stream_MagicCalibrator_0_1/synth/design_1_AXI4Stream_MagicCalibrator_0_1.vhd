@@ -147,7 +147,7 @@ ARCHITECTURE design_1_AXI4Stream_MagicCalibrator_0_1_arch OF design_1_AXI4Stream
 BEGIN
   U0 : AXI4Stream_MagicCalibrator
     GENERIC MAP (
-      BIT_UNCALIBRATED => 12,
+      BIT_UNCALIBRATED => 11,
       BIT_COARSE => 8,
       BIT_FID => 1,
       INTEGRATION_METHOD => "-",
